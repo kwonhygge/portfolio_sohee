@@ -1,0 +1,7 @@
+.img {
+  position: fixed;
+  max-height: 100%;
+  max-width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
