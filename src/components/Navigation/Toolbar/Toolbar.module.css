@@ -1,0 +1,30 @@
+.Toolbar {
+  position: fixed;
+  display: flex;
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.HomeBtn {
+  width: 144px;
+  height: 68px;
+  display: inline-block;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding: 0 10px;
+  text-align: center;
+  box-shadow: -3px -3px 10px 0.06px #ffffff, 3px 3px 5px 0.06px #9d9494;
+  border-radius: 20px;
+}
+
+.HomeBtn span {
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 68px;
+  letter-spacing: 0.1em;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+}

@@ -1,6 +1,17 @@
+.layoutContainer {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eeeeee;
+  box-shadow: -10px -10px 20px 0.12px #ffffff, 5px 5px 20px 0.12px #acafb1;
+  border-radius: 50px;
+}
+
 .Content {
-  margin-top: 11rem;
-  text-align: center;
+  margin-top: 5rem;
 }
 body {
   background-color: #dadada;
