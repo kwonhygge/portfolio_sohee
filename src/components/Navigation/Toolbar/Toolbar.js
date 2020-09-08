@@ -11,6 +11,7 @@ const Toolbar = () => (
       <nav>
         <NavigationItems />
       </nav>
+      <div>copy</div>
     </header>
   </>
 );
