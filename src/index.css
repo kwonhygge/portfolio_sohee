@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'made-tommy-regular';
+  src: url('https://dafonttop.com/wp-data/t/987/13987/file/made-tommy-regular-personal-use.otf')
+      format('woff'),
+    url('https://dafonttop.com/wp-data/t/987/13987/file/made-tommy-regular-personal-use.otf')
+      format('opentype'),
+    url('https://dafonttop.com/wp-data/t/987/13987/file/made-tommy-regular-personal-use.otf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'made-tommy';
+  src: local('made-tommy'),
+    url('../src/assets/fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf')
+      format('opentype');
+  font-size: regular;
+  font-weight: regular;
+}

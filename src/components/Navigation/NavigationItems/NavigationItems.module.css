@@ -1,5 +1,6 @@
 .NavigationItems {
   padding: 0 5rem;
+  font-family: 'made-tommy';
 }
 .NavigationItems ul {
   display: flex;

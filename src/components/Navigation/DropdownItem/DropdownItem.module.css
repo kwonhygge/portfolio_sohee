@@ -1,5 +1,6 @@
 .DropdownItem {
   padding: 1rem 1rem 1rem 0.5rem;
+  font-family: 'made-tommy';
 }
 .DropdownItem:hover {
   box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
