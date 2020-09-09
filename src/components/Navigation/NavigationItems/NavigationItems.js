@@ -3,7 +3,7 @@ import styles from './NavigationItems.module.css';
 
 const NavigationItems = (props) => (
   <>
-    <nav>
+    <nav className={styles.NavigationItems}>
       <ul>{props.children}</ul>
     </nav>
   </>

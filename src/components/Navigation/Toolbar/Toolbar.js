@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem';
+import CopyItem from '../CopyItem/CopyItem';
 
 const Toolbar = () => {
   return (
@@ -17,18 +18,20 @@ const Toolbar = () => {
             />
           </svg>
         </a>
-        <NavigationItems>
-          <NavigationItem item="About">
-            <div>Dropdown</div>
-          </NavigationItem>
-          <NavigationItem item="Portfolio">
-            <div>Dropdown</div>
-          </NavigationItem>
-          <NavigationItem item="Contact">
-            <div>Profile</div>
-          </NavigationItem>
-        </NavigationItems>
-        <div>copy</div>
+        <div className={styles.NavContents}>
+          <NavigationItems>
+            <NavigationItem item="About">
+              <div>Dropdown</div>
+            </NavigationItem>
+            <NavigationItem item="Portfolio">
+              <div>Dropdown</div>
+            </NavigationItem>
+            <NavigationItem item="Contact">
+              <div>Profile</div>
+            </NavigationItem>
+          </NavigationItems>
+          <CopyItem>Chubycheeks01@gmail.com</CopyItem>
+        </div>
       </header>
     </>
   );

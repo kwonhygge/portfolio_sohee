@@ -7,6 +7,7 @@ const NavigationItem = (props) => {
   const handleClickMenu = () => {
     setOpen(!open);
   };
+
   return (
     <li className={styles.NavigationItem}>
       <a href="#" onClick={handleClickMenu}>
