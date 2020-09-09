@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_sohee/static/css/main.e24d4730.chunk.css",
+    "main.css": "/portfolio_sohee/static/css/main.ceaed2e8.chunk.css",
     "main.js": "/portfolio_sohee/static/js/main.91f0369a.chunk.js",
     "main.js.map": "/portfolio_sohee/static/js/main.91f0369a.chunk.js.map",
     "runtime-main.js": "/portfolio_sohee/static/js/runtime-main.4b77025c.js",
@@ -8,9 +8,9 @@
     "static/js/2.50703b45.chunk.js": "/portfolio_sohee/static/js/2.50703b45.chunk.js",
     "static/js/2.50703b45.chunk.js.map": "/portfolio_sohee/static/js/2.50703b45.chunk.js.map",
     "index.html": "/portfolio_sohee/index.html",
-    "precache-manifest.89108914337002e259e379863d0df8eb.js": "/portfolio_sohee/precache-manifest.89108914337002e259e379863d0df8eb.js",
+    "precache-manifest.cddad2e2bfdd3bf7932feec96706ee32.js": "/portfolio_sohee/precache-manifest.cddad2e2bfdd3bf7932feec96706ee32.js",
     "service-worker.js": "/portfolio_sohee/service-worker.js",
-    "static/css/main.e24d4730.chunk.css.map": "/portfolio_sohee/static/css/main.e24d4730.chunk.css.map",
+    "static/css/main.ceaed2e8.chunk.css.map": "/portfolio_sohee/static/css/main.ceaed2e8.chunk.css.map",
     "static/js/2.50703b45.chunk.js.LICENSE.txt": "/portfolio_sohee/static/js/2.50703b45.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio_sohee/static/media/MADE TOMMY Medium_PERSONAL USE.1735b808.otf",
     "static/media/amelie.jpg": "/portfolio_sohee/static/media/amelie.8ffb1472.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.4b77025c.js",
     "static/js/2.50703b45.chunk.js",
-    "static/css/main.e24d4730.chunk.css",
+    "static/css/main.ceaed2e8.chunk.css",
     "static/js/main.91f0369a.chunk.js"
   ]
 }
