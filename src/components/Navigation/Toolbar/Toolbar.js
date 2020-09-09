@@ -3,6 +3,7 @@ import styles from './Toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import NavigationItem from '../NavigationItems/NavigationItem/NavigationItem';
 import CopyItem from '../CopyItem/CopyItem';
+import DropdownItem from '../DropdownItem/DropdownItem';
 
 const Toolbar = () => {
   return (
@@ -21,10 +22,16 @@ const Toolbar = () => {
         <div className={styles.NavContents}>
           <NavigationItems>
             <NavigationItem item="About">
-              <div>Dropdown</div>
+              <ul className={styles.DropdownMenu}>
+                <DropdownItem>Profile</DropdownItem>
+                <DropdownItem>Resume</DropdownItem>
+              </ul>
             </NavigationItem>
             <NavigationItem item="Portfolio">
-              <div>Dropdown</div>
+              <ul className={styles.DropdownMenu}>
+                <DropdownItem>Works</DropdownItem>
+                <DropdownItem>Toy Project</DropdownItem>
+              </ul>
             </NavigationItem>
             <NavigationItem item="Contact">
               <div>Profile</div>

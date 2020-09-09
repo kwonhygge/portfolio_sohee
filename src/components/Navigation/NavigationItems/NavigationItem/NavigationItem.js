@@ -10,9 +10,7 @@ const NavigationItem = (props) => {
 
   return (
     <li className={styles.NavigationItem}>
-      <a href="#" onClick={handleClickMenu}>
-        {props.item}
-      </a>
+      <a onClick={handleClickMenu}>{props.item}</a>
       {open && props.children}
     </li>
   );
