@@ -1,6 +1,12 @@
 import React from 'react';
 import styles from './NavigationItems.module.css';
 
-const navigationItems = () => <></>;
+const NavigationItems = (props) => (
+  <>
+    <nav>
+      <ul>{props.children}</ul>
+    </nav>
+  </>
+);
 
-export default navigationItems;
+export default NavigationItems;
