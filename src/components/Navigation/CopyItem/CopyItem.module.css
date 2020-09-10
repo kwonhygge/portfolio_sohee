@@ -1,4 +1,5 @@
 .CopyItem {
+  width: 220px;
   text-decoration: none;
   border: 2px solid #626e94;
   box-sizing: border-box;
@@ -8,16 +9,32 @@
     inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2);
   border-radius: 80px;
   color: #5c668a;
-  font-weight: 500;
-  padding: 0.5rem;
-  line-height: 0.5rem;
-  font-size: 0.5rem;
+  font-family: 'Poppins';
+  font-weight: 400;
+  padding: 6px 8px;
+  line-height: 4px;
+  font-size: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .CopyItem span {
   background: #627395;
   border-radius: 5px;
   color: #fff;
-  margin-left: 2rem;
-  padding: 3px;
+  padding: 6px;
+}
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .CopyItem {
+    display: none;
+  }
+}
+/* mobile */
+@media (max-width: 768px) {
+  .CopyItem {
+    display: none;
+  }
 }

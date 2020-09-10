@@ -1,12 +1,22 @@
 .NavigationItem {
+  position: relative;
   display: inline-block;
-  padding: 0 3rem;
+  padding: 0 4vw;
 }
 .NavigationItem a {
   text-decoration: none;
   color: #000;
+  display: flex;
+  align-items: center;
 }
 
 .NavigationItem:hover {
   cursor: pointer;
+}
+.Triangle {
+  margin-left: 10px;
+}
+.Rotated {
+  margin-left: 10px;
+  transform: rotateX(3.142rad) translateY(1px);
 }
