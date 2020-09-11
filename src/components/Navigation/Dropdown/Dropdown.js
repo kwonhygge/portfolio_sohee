@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AboutMenuItems } from './MenuItemList/AboutMenuItems';
-import { MenuItems } from './MenuItemList/MenuItems';
+import { MenuItems } from './MenuItems';
+import styles from './Dropdown.module.css';
 
 const Dropdown = (props) => {
   const menu = props.menu;
@@ -10,12 +10,12 @@ const Dropdown = (props) => {
   const handleClick = () => setClick(!click);
   return (
     <>
-      <ul>
+      <ul className={styles.Dropdown}>
         {MenuItems[menu].map((item, index) => {
           return (
             <li key={index}>
               <Link
-                className={item.cName}
+                className={styles.DropdownItem}
                 to={item.path}
                 onClick={() => setClick(false)}
               >

@@ -60,85 +60,72 @@ class Toolbar extends Component {
       <>
         <header className={styles.Toolbar}>
           <div className={styles.ToolbarContent}>
-            <Link to="/" exact="true">
-              <HomeLogo />
-            </Link>
-            <div className="menu-icon" onClick={this.handleClick}>
-              {click ? (
-                <FontAwesomeIcon icon="times" size="2x" />
-              ) : (
-                <FontAwesomeIcon icon="bars" size="2x" />
-              )}
-            </div>
-            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-              <li className="nav-item">
-                <Link
-                  to="/"
-                  className="nav-links"
-                  onClick={this.closeMobileMenu}
+            <div>
+              <Link to="/" exact="true">
+                <HomeLogo />
+              </Link>
+              <div className={styles.MenuIcon} onClick={this.handleClick}>
+                {click ? (
+                  <FontAwesomeIcon icon="times" size="2x" />
+                ) : (
+                  <FontAwesomeIcon icon="bars" size="2x" />
+                )}
+              </div>
+              <ul className={styles.NavItems}>
+                <li
+                  className={styles.NavItem}
+                  onMouseEnter={this.onMouseEnter}
+                  onMouseLeave={this.onMouseLeave}
                 >
-                  Home
-                </Link>
-              </li>
-              <li
-                className="nav-item"
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-              >
-                <Link
-                  id="0"
-                  to="/about"
-                  className="nav-links"
-                  onClick={this.closeMobileMenu}
-                >
-                  About
+                  <Link id="0" to="/about" onClick={this.closeMobileMenu}>
+                    About
+                    {hoverStates[0] ? (
+                      <FontAwesomeIcon
+                        className={styles.Caret}
+                        icon="caret-up"
+                        size="1x"
+                      />
+                    ) : (
+                      <FontAwesomeIcon
+                        className={styles.Caret}
+                        icon="caret-down"
+                        size="1x"
+                      />
+                    )}
+                  </Link>
                   {hoverStates[0] ? (
-                    <FontAwesomeIcon
-                      color="#626E94"
-                      className={styles.Caret}
-                      icon="caret-up"
-                      size="1x"
-                    />
-                  ) : (
-                    <FontAwesomeIcon
-                      color="#626E94"
-                      className={styles.Caret}
-                      icon="caret-down"
-                      size="1x"
-                    />
-                  )}
-                </Link>
-                {hoverStates[0] ? <Dropdown menu={0} /> : null}
-              </li>
-              <li
-                className="nav-item"
-                onMouseEnter={this.onMouseEnter}
-                onMouseLeave={this.onMouseLeave}
-              >
-                <Link
-                  id="1"
-                  to="/portfolio"
-                  className="nav-links"
-                  onClick={this.closeMobileMenu}
+                    <Dropdown className={styles.Dropdown} menu={0} />
+                  ) : null}
+                </li>
+                <li
+                  className={styles.NavItem}
+                  onMouseEnter={this.onMouseEnter}
+                  onMouseLeave={this.onMouseLeave}
                 >
-                  About
+                  <Link id="1" to="/portfolio" onClick={this.closeMobileMenu}>
+                    Portfolio
+                    {hoverStates[1] ? (
+                      <FontAwesomeIcon
+                        className={styles.Caret}
+                        icon="caret-up"
+                        size="1x"
+                      />
+                    ) : (
+                      <FontAwesomeIcon
+                        className={styles.Caret}
+                        icon="caret-down"
+                        size="1x"
+                      />
+                    )}
+                  </Link>
                   {hoverStates[1] ? (
-                    <FontAwesomeIcon
-                      className={styles.Caret}
-                      icon="caret-up"
-                      size="1x"
-                    />
-                  ) : (
-                    <FontAwesomeIcon
-                      className={styles.Caret}
-                      icon="caret-down"
-                      size="1x"
-                    />
-                  )}
-                </Link>
-                {hoverStates[1] ? <Dropdown menu={1} /> : null}
-              </li>
-            </ul>
+                    <Dropdown className={styles.Dropdown} menu={1} />
+                  ) : null}
+                </li>
+                <li className={styles.NavItem}>Contact</li>
+              </ul>
+            </div>
+
             <CopyItem>Chubycheeks01@gmail.com</CopyItem>
           </div>
         </header>

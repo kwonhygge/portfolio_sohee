@@ -1,0 +1,29 @@
+.Dropdown {
+  position: absolute;
+  top: 3vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  box-shadow: -7px -7px 10px 0.5px rgba(255, 255, 255, 0.6),
+    7px 7px 10px 0.5px rgba(5, 0, 0, 0.3),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px 0;
+  font-family: 'Poppins';
+  font-weight: 600;
+  background: #e9e9e9;
+}
+
+.DropdownItem {
+  padding: 1rem 1rem 1rem 0.5rem;
+  font-family: 'Poppins';
+}
+.Dropdown li {
+  line-height: 50px;
+}
+.Dropdown li:hover {
+  box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
