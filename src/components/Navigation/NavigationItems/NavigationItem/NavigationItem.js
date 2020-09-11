@@ -1,16 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styles from './NavigationItem.module.css';
 
 const NavigationItem = (props) => {
   const [open, setOpen] = useState(false);
+  const myRef = useRef();
 
   const handleClickMenu = () => {
     setOpen(!open);
   };
 
+  const handleClickOutside = (e) => {
+    if (open && !myRef.current.contains(e.target)) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  });
+
   return (
     <li className={styles.NavigationItem}>
-      <a onClick={handleClickMenu}>
+      <a ref={myRef} onClick={handleClickMenu}>
         {props.item}
         {props.isIcon && (
           <svg

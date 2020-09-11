@@ -10,13 +10,14 @@
   border-radius: 80px;
   color: #5c668a;
   font-family: 'Poppins';
-  font-weight: 400;
+  font-weight: 500;
   padding: 6px 8px;
   line-height: 4px;
   font-size: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .CopyItem span {
@@ -24,6 +25,15 @@
   border-radius: 5px;
   color: #fff;
   padding: 6px;
+}
+
+.CopyItem:hover {
+  cursor: pointer;
+}
+
+.CopiedMsg {
+  position: absolute;
+  right: -50px;
 }
 /* tablet */
 
