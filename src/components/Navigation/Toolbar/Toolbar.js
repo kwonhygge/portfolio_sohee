@@ -6,6 +6,7 @@ import Dropdown from '../Dropdown/Dropdown';
 import HomeLogo from '../HomeLogo/HomeLogo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../../UI/Modal/Modal';
+import Contact from '../Contact/Contact';
 import { Resume, Profile, ToyProject, Works } from '../../pages/index';
 
 class Toolbar extends Component {
@@ -151,7 +152,7 @@ class Toolbar extends Component {
           show={this.state.contactClick}
           modalClosed={this.contactCancelHandler}
         >
-          <h1>Modal</h1>
+          <Contact />
         </Modal>
       </>
     );
