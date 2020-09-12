@@ -16,7 +16,7 @@ export const MenuItems = [
       path: '/works',
     },
     {
-      title: 'ToyProject',
+      title: 'Toy Project',
       path: '/toyproject',
     },
   ],

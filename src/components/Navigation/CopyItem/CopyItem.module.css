@@ -1,5 +1,5 @@
 .CopyItem {
-  width: 220px;
+  width: 16vw;
   text-decoration: none;
   border: 2px solid #626e94;
   box-sizing: border-box;
@@ -10,10 +10,9 @@
   border-radius: 80px;
   color: #5c668a;
   font-family: 'Poppins';
-  font-weight: 500;
-  padding: 6px 8px;
-  line-height: 4px;
-  font-size: 3px;
+  font-weight: 600;
+  padding: 0.4vw 0.5vw 0.4vw 0.8vw;
+  font-size: 0.76vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +23,9 @@
   background: #627395;
   border-radius: 5px;
   color: #fff;
-  padding: 6px;
+  padding: 0.3vw 0.4vw;
+  font-weight: 300;
+  font-size: 10%;
 }
 
 .CopyItem:hover {

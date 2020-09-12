@@ -5,14 +5,16 @@ import CopyItem from '../CopyItem/CopyItem';
 import Dropdown from '../Dropdown/Dropdown';
 import HomeLogo from '../HomeLogo/HomeLogo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Modal from '../../UI/Modal/Modal';
 import { Resume, Profile, ToyProject, Works } from '../../pages/index';
 
 class Toolbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      click: false,
+      homeClick: false,
       hoverStates: {},
+      contactClick: false,
     };
   }
 
@@ -48,14 +50,21 @@ class Toolbar extends Component {
     }
   };
 
-  handleClick = () =>
+  handleHomeClick = () =>
     this.setState((prevState) => ({
-      click: !prevState.click,
+      homeClick: !prevState.homeClick,
     }));
-  closeMobileMenu = () => this.setState({ click: false });
+
+  handleContactClickHandler = () => {
+    this.setState({ contactClick: true });
+  };
+  contactCancelHandler = () => {
+    this.setState({ contactClick: false });
+  };
+  closeMobileMenu = () => this.setState({ homeClick: false });
 
   render() {
-    const { click, hoverStates } = this.state;
+    const { homeClick, hoverStates } = this.state;
     return (
       <>
         <header className={styles.Toolbar}>
@@ -64,8 +73,11 @@ class Toolbar extends Component {
               <Link to="/" exact="true">
                 <HomeLogo />
               </Link>
-              <div className={styles.MenuIcon} onClick={this.handleClick}>
-                {click ? (
+              <div
+                className={styles.MenuIcon}
+                onhomeClick={this.handleHomeClick}
+              >
+                {homeClick ? (
                   <FontAwesomeIcon icon="times" size="2x" />
                 ) : (
                   <FontAwesomeIcon icon="bars" size="2x" />
@@ -73,6 +85,7 @@ class Toolbar extends Component {
               </div>
               <ul className={styles.NavItems}>
                 <li
+                  id="0"
                   className={styles.NavItem}
                   onMouseEnter={this.onMouseEnter}
                   onMouseLeave={this.onMouseLeave}
@@ -98,6 +111,7 @@ class Toolbar extends Component {
                   ) : null}
                 </li>
                 <li
+                  id="1"
                   className={styles.NavItem}
                   onMouseEnter={this.onMouseEnter}
                   onMouseLeave={this.onMouseLeave}
@@ -122,13 +136,23 @@ class Toolbar extends Component {
                     <Dropdown className={styles.Dropdown} menu={1} />
                   ) : null}
                 </li>
-                <li className={styles.NavItem}>Contact</li>
+                <li
+                  onClick={this.handleContactClickHandler}
+                  className={styles.NavItem}
+                >
+                  Contact
+                </li>
               </ul>
             </div>
-
             <CopyItem>Chubycheeks01@gmail.com</CopyItem>
           </div>
         </header>
+        <Modal
+          show={this.state.contactClick}
+          modalClosed={this.contactCancelHandler}
+        >
+          <h1>Modal</h1>
+        </Modal>
       </>
     );
   }

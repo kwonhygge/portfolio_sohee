@@ -35,7 +35,7 @@ class CopyItem extends Component {
         >
           <a className={styles.CopyItem}>
             {this.props.children}
-            <span>copy</span>
+            <span>Copy</span>
             {this.state.copied && <h1 className={styles.CopiedMsg}>copied!</h1>}
           </a>
         </CopyToClipboard>
