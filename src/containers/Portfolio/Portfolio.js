@@ -37,7 +37,7 @@ class Portfolio extends Component {
         <div className={styles.Portfolio}>
           <div className={styles.Contents}>
             {type === 'works' && <Works page={currentPage} posts={posts} />}
-            {type === 'toyproject' && <span>Toy Project</span>}
+            {type === 'toyproject' && <ToyProject />}
           </div>
         </div>
       </>
