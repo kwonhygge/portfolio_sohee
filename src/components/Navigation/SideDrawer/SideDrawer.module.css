@@ -6,6 +6,7 @@
   left: 0;
   bottom: 0;
   width: 29%;
-
-  text-align: center;
+  padding-left: 12.5vw;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2.08vw;
 }

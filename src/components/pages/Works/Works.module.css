@@ -7,3 +7,6 @@
 .Pic {
   height: 500px;
 }
+.SelectedType {
+  border-bottom: 4px solid #5c668a;
+}

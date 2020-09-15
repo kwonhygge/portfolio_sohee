@@ -3,6 +3,7 @@ import WorkInfo from './WorkInfo/WorkInfo';
 import styles from './Works.module.css';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
+import sideStyles from '../../../containers/Portfolio/Portfolio.module.css';
 
 const Works = (props) => {
   const posts = props.posts;
@@ -10,9 +11,10 @@ const Works = (props) => {
   return (
     <>
       <SideDrawer>
-        <h1>Portfolio </h1>
-        <h2>Works</h2>
-        <ul>
+        <h1 className={sideStyles.SideBigType}>Portfolio </h1>
+        <h2 className={sideStyles.SideSmallType}>Works</h2>
+        <div className={sideStyles.SideIndex}>
+          <span className={styles.SelectedType}>Work</span>
           <Link
             to="work1"
             spy={true}
@@ -31,7 +33,7 @@ const Works = (props) => {
           >
             2
           </Link>
-        </ul>
+        </div>
       </SideDrawer>
       <div className={styles.Contents}>
         <Element name="work1">
