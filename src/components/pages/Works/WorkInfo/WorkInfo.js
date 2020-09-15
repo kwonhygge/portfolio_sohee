@@ -12,27 +12,27 @@ const Works = (props) => {
           <h2>{post.name}</h2>
           <Colors colorlist={post.colors} />
         </div>
-        <div>
+        <div className={styles.Content}>
           <div>
-            <span>인원</span>
+            <h1>인원</h1>
             <span>{post.member} 프로젝트</span>
           </div>
           <div>
-            <span>기간</span>
+            <h1>기간</h1>
             <span>{post.period.date}</span>
-            <span>{post.period.explanation}</span>
+            <h2>{post.period.explanation}</h2>
           </div>
           <div>
-            <span>목표</span>
+            <h1>목표</h1>
             <span>{post.objective}</span>
           </div>
           <div>
-            <span>역할</span>
+            <h1>역할</h1>
             <span>{post.role.role}</span>
-            <span>{post.role.explanation}</span>
+            <h2>{post.role.explanation}</h2>
           </div>
           <div>
-            <span>사용 프로그램</span>
+            <h1>사용 프로그램</h1>
             <span>{post.program}</span>
           </div>
         </div>
