@@ -5,8 +5,6 @@ import CopyItem from '../CopyItem/CopyItem';
 import Dropdown from '../Dropdown/Dropdown';
 import HomeLogo from '../HomeLogo/HomeLogo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Modal from '../../UI/Modal/Modal';
-import Contact from '../Contact/Contact';
 import { Resume, Profile, ToyProject, Works } from '../../pages/index';
 
 class Toolbar extends Component {
@@ -56,12 +54,6 @@ class Toolbar extends Component {
       homeClick: !prevState.homeClick,
     }));
 
-  handleContactClickHandler = () => {
-    this.setState({ contactClick: true });
-  };
-  contactCancelHandler = () => {
-    this.setState({ contactClick: false });
-  };
   closeMobileMenu = () => this.setState({ homeClick: false });
 
   render() {
@@ -91,7 +83,14 @@ class Toolbar extends Component {
                   onMouseEnter={this.onMouseEnter}
                   onMouseLeave={this.onMouseLeave}
                 >
-                  <Link id="0" to="/about" onClick={this.closeMobileMenu}>
+                  <Link
+                    id="0"
+                    to={{
+                      pathname: '/about',
+                      state: { type: 'profile', indx: 0 },
+                    }}
+                    onClick={this.closeMobileMenu}
+                  >
                     About
                     {hoverStates[0] ? (
                       <FontAwesomeIcon
@@ -117,7 +116,13 @@ class Toolbar extends Component {
                   onMouseEnter={this.onMouseEnter}
                   onMouseLeave={this.onMouseLeave}
                 >
-                  <Link id="1" to="/portfolio" onClick={this.closeMobileMenu}>
+                  <Link
+                    id="1"
+                    to={{
+                      pathname: '/portfolio/works/0',
+                    }}
+                    onClick={this.closeMobileMenu}
+                  >
                     Portfolio
                     {hoverStates[1] ? (
                       <FontAwesomeIcon
@@ -141,19 +146,13 @@ class Toolbar extends Component {
                   onClick={this.handleContactClickHandler}
                   className={styles.NavItem}
                 >
-                  Contact
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
             <CopyItem>Chubycheeks01@gmail.com</CopyItem>
           </div>
         </header>
-        <Modal
-          show={this.state.contactClick}
-          modalClosed={this.contactCancelHandler}
-        >
-          <Contact />
-        </Modal>
       </>
     );
   }

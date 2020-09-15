@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './Main.module.css';
 
-const Main = () => (
-  <>
-    <h1>Main</h1>
-  </>
-);
+class Main extends Component {
+  constructor(props) {
+    super(props);
+  }
 
+  render() {
+    console.log(this.props);
+    return <></>;
+  }
+}
 export default Main;

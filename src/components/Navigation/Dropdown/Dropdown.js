@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MenuItems } from './MenuItems';
+import { MenuItems } from '../../../store/menuitems/MenuItems';
 import styles from './Dropdown.module.css';
 
 const Dropdown = (props) => {
   const menu = props.menu;
-  console.log(MenuItems);
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
@@ -16,7 +15,9 @@ const Dropdown = (props) => {
             <li key={index}>
               <Link
                 className={styles.DropdownItem}
-                to={item.path}
+                to={{
+                  pathname: item.path,
+                }}
                 onClick={() => setClick(false)}
               >
                 {item.title}

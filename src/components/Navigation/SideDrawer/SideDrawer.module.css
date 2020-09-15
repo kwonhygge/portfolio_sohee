@@ -1,0 +1,11 @@
+.SideDrawer {
+  z-index: 1;
+  padding-top: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 29%;
+
+  text-align: center;
+}

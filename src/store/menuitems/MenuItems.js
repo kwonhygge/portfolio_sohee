@@ -3,21 +3,25 @@ export const MenuItems = [
     {
       title: 'Profile',
       path: '/profile',
+      type: 'profile',
+      indx: 0,
     },
     {
       title: 'Resume',
       path: '/resume',
+      type: 'resume',
+      indx: 0,
     },
   ],
 
   [
     {
       title: 'Works',
-      path: '/works',
+      path: '/portfolio/works/0',
     },
     {
       title: 'Toy Project',
-      path: '/toyproject',
+      path: '/portfolio/toyproject/1',
     },
   ],
 ];

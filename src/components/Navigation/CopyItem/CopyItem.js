@@ -34,8 +34,8 @@ class CopyItem extends Component {
           onCopy={() => this.handleOpen()}
         >
           <a className={styles.CopyItem}>
-            {this.props.children}
-            <span>Copy</span>
+            <span className={styles.Email}>{this.props.children}</span>
+            <span className={styles.CopyBtn}>Copy</span>
             {this.state.copied && <h1 className={styles.CopiedMsg}>copied!</h1>}
           </a>
         </CopyToClipboard>
