@@ -13,8 +13,7 @@ const Colors = (props) => {
                 height: '2.08vw',
                 borderRadius: '50%',
                 boxShadow:
-                  '-4px -4px 10px 0.21px #FFFFFF, inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2)',
-                filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))',
+                  '-4px -4px 10px 0.21px #FFFFFF, inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2),0px 4px 4px rgba(0, 0, 0, 0.25)',
                 marginRight: '0.83vw',
               }}
             ></div>

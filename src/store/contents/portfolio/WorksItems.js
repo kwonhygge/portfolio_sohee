@@ -1,8 +1,8 @@
 export const WorksItems = [
   [
     {
-      index: 'Work 01',
-      name: '서울 애니메이션 센터',
+      index: 'Work 1',
+      name: '서울애니메이션센터',
       colors: ['#462B6D', '#D2474B', '#EDEBE2', '#FBB03B'],
       member: '팀',
       period: {
@@ -17,7 +17,7 @@ export const WorksItems = [
       program: 'illustration',
     },
     {
-      index: 'work 02',
+      index: 'work 2',
       name: '큐레이션 서가',
       title: '주제: 안녕! 이런 취향은 어때?',
       colors: ['#2B4743', '#CCCCCC', '#FFFFFF', '#41819F'],
@@ -36,7 +36,7 @@ export const WorksItems = [
   ],
   [
     {
-      index: 'Book 01',
+      index: 'Book 1',
       name: '해리포터 스튜디오 가이드북',
       colors: ['#AC8035', '#F7F8F8', '#334642'],
       member: '개인',
@@ -45,7 +45,7 @@ export const WorksItems = [
       program: 'Photoshop, indesign',
     },
     {
-      index: 'Book 02',
+      index: 'Book 2',
       name: '여행잡지, 덤보(Dumbo)',
       colors: ['#ECBEC4', '#F7F8F8', '#BDBAC5'],
       member: '개인',
@@ -54,7 +54,7 @@ export const WorksItems = [
       program: 'Photoshop, indesign',
     },
     {
-      index: 'Book 03',
+      index: 'Book 3',
       name: '소설, 푸른안개',
       colors: ['#000000', '#C7D4E5', '#FFFFFF'],
       member: '개인',

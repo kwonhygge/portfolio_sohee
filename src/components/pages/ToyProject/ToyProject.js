@@ -29,43 +29,41 @@ class ToyProject extends Component {
           <h1>Portfolio </h1>
           <h2>Toy Project</h2>
           <div>
-            <ul>
-              <span id="0" onClick={this.handleClickType}>
-                Book
-              </span>
-              {type[0] && (
-                <div>
-                  <Link
-                    to="book1"
-                    type="book"
-                    spy={true}
-                    smooth={true}
-                    offset={-500}
-                    duration={500}
-                  >
-                    1
-                  </Link>
-                  <Link
-                    to="book2"
-                    spy={true}
-                    smooth={true}
-                    offset={-200}
-                    duration={500}
-                  >
-                    2
-                  </Link>
-                  <Link
-                    to="book3"
-                    spy={true}
-                    smooth={true}
-                    offset={-200}
-                    duration={500}
-                  >
-                    3
-                  </Link>
-                </div>
-              )}
-            </ul>
+            <span id="0" onClick={this.handleClickType}>
+              Book
+            </span>
+            {type[0] && (
+              <div>
+                <Link
+                  to="book1"
+                  type="book"
+                  spy={true}
+                  smooth={true}
+                  offset={-500}
+                  duration={500}
+                >
+                  1
+                </Link>
+                <Link
+                  to="book2"
+                  spy={true}
+                  smooth={true}
+                  offset={-200}
+                  duration={500}
+                >
+                  2
+                </Link>
+                <Link
+                  to="book3"
+                  spy={true}
+                  smooth={true}
+                  offset={-200}
+                  duration={500}
+                >
+                  3
+                </Link>
+              </div>
+            )}
           </div>
           <div>
             <ul>
