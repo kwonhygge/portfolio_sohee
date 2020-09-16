@@ -6,8 +6,8 @@ import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
 import { WorksItems } from '../../../store/contents/portfolio/WorksItems';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ImageComponent from '../../UI/ImageComponent/ImageComponent';
-import amelie from '../../../assets/images/amelie.jpg';
+import WorkImageFirst from './WorkImages/WorkImageFirst';
+import WorkImageSecond from './WorkImages/WorkImageSecond';
 
 class Works extends Component {
   constructor() {
@@ -55,15 +55,11 @@ class Works extends Component {
         <div className={styles.Contents}>
           <Element name="work1">
             <WorkInfo item={WorksItems[0]} />
-            <div className={styles.ImageContainer}>
-              <div className={styles.Image}>
-                <ImageComponent imgSrc={amelie} imgAlt="amelie" />
-              </div>
-            </div>
+            <WorkImageFirst />
           </Element>
           <Element name="work2">
             <WorkInfo item={WorksItems[1]} />
-            <div className={styles.Pic}></div>
+            <WorkImageSecond />
           </Element>
         </div>
       </>

@@ -4,18 +4,26 @@
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.Pic {
-  height: 500px;
-}
 .ImageContainer {
   display: flex;
+  width: 47.5vw;
+  height: 27.34vw;
+  justify-content: space-between;
+  align-items: center;
+}
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.Row img {
   width: 100%;
-  padding: 1.82vw 2.91vw 1.3vw 2.91vw;
 }
-.Image:nth-child(1) {
-  width: 12.76vw;
-  height: 100%;
-}
-.Image:hover {
-  cursor: pointer;
+.Col img {
+  vertical-align: middle;
+  width: 100%;
 }
