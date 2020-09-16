@@ -1,20 +1,27 @@
 import React from 'react';
 import styles from './Modal.module.css';
 import Backdrop from '../Backdrop/Backdrop';
-
-const modal = (props) => (
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+const Modal = (props) => (
   <>
     <Backdrop show={props.show} clicked={props.modalClosed} />
     <div
       className={styles.Modal}
       style={{
-        transform: props.show ? 'translate(-50%,-30%)' : 'translateY(-100vh)',
+        transform: props.show ? 'translate(-50%, -50%)' : 'scale(0)',
         opacity: props.show ? '1' : '0',
       }}
     >
+      <FontAwesomeIcon
+        className={styles.Close}
+        onClick={props.modalClosed}
+        icon="times"
+        size="1x"
+      />
+
       {props.children}
     </div>
   </>
 );
 
-export default modal;
+export default Modal;

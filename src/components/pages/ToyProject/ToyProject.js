@@ -14,6 +14,9 @@ class ToyProject extends Component {
       type: { [0]: true },
     };
   }
+  componentDidMount = () => {
+    scroll.scrollToTop();
+  };
 
   handleClickType = (e) => {
     scroll.scrollToTop();
