@@ -5,6 +5,7 @@ import styles from './ToyProject.module.css';
 import Book from './Book/Book';
 import Poster from './Poster/Poster';
 import Illustration from './Illustration/Illustration';
+import sideStyles from '../../../containers/Portfolio/Portfolio.module.css';
 class ToyProject extends Component {
   constructor(props) {
     super(props);
@@ -12,6 +13,7 @@ class ToyProject extends Component {
       type: {},
     };
   }
+
   handleClickType = (e) => {
     scroll.scrollToTop();
     this.setState({
@@ -26,10 +28,14 @@ class ToyProject extends Component {
     return (
       <>
         <SideDrawer>
-          <h1>Portfolio </h1>
-          <h2>Toy Project</h2>
-          <div>
-            <span id="0" onClick={this.handleClickType}>
+          <h1 className={sideStyles.SideBigType}>Portfolio </h1>
+          <h2 className={sideStyles.SideSmallType}>Toy Project</h2>
+          <div className={sideStyles.SideIndex}>
+            <span
+              id="0"
+              onClick={this.handleClickType}
+              className={type[0] && sideStyles.SelectedType}
+            >
               Book
             </span>
             {type[0] && (
@@ -65,45 +71,51 @@ class ToyProject extends Component {
               </div>
             )}
           </div>
-          <div>
-            <ul>
-              <span id="1" onClick={this.handleClickType}>
-                Poster
-              </span>
-              {type[1] && (
-                <div>
-                  <Link
-                    to="poster1"
-                    spy={true}
-                    smooth={true}
-                    offset={-500}
-                    duration={500}
-                  >
-                    1
-                  </Link>
-                  <Link
-                    to="poster2"
-                    spy={true}
-                    smooth={true}
-                    offset={-200}
-                    duration={500}
-                  >
-                    2
-                  </Link>
-                  <Link
-                    to="poster3"
-                    spy={true}
-                    smooth={true}
-                    offset={-200}
-                    duration={500}
-                  >
-                    3
-                  </Link>
-                </div>
-              )}
-            </ul>
+          <div className={sideStyles.SideIndex}>
+            <span
+              id="1"
+              onClick={this.handleClickType}
+              className={type[1] && sideStyles.SelectedType}
+            >
+              Poster
+            </span>
+            {type[1] && (
+              <div>
+                <Link
+                  to="poster1"
+                  spy={true}
+                  smooth={true}
+                  offset={-500}
+                  duration={500}
+                >
+                  1
+                </Link>
+                <Link
+                  to="poster2"
+                  spy={true}
+                  smooth={true}
+                  offset={-200}
+                  duration={500}
+                >
+                  2
+                </Link>
+                <Link
+                  to="poster3"
+                  spy={true}
+                  smooth={true}
+                  offset={-200}
+                  duration={500}
+                >
+                  3
+                </Link>
+              </div>
+            )}
           </div>
-          <span id="2" onClick={this.handleClickType}>
+          <span
+            id="2"
+            onClick={this.handleClickType}
+            className={type[2] && sideStyles.SelectedType}
+          >
             illustration
           </span>
         </SideDrawer>

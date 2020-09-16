@@ -14,7 +14,7 @@ const Works = (props) => {
         <h1 className={sideStyles.SideBigType}>Portfolio </h1>
         <h2 className={sideStyles.SideSmallType}>Works</h2>
         <div className={sideStyles.SideIndex}>
-          <span className={styles.SelectedType}>Work</span>
+          <span className={sideStyles.SelectedType}>Work</span>
           <Link
             to="work1"
             spy={true}

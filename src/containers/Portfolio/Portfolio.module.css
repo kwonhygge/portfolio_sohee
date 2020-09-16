@@ -15,9 +15,11 @@
   font-size: 0.98vw;
   margin-bottom: 1.56vw;
 }
-
+.SideIndex {
+  display: flex;
+  margin-bottom: 1.19vw;
+}
 .SideIndex span {
-  font-weight: 600;
   margin-right: 2.6vw;
 }
 .SideIndex a {
@@ -28,4 +30,9 @@
 .SideIndex a:hover {
   cursor: pointer;
   font-weight: 600;
+}
+
+.SelectedType {
+  font-weight: 600;
+  border-bottom: 4px solid #5c668a;
 }
