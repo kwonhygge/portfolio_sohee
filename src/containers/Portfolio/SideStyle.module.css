@@ -1,8 +1,13 @@
 .SideBigType {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.34vw;
+}
+
+.SideBigType h1 {
   font-weight: 500;
   color: #5c668a;
   font-size: 1.19vw;
-  margin-bottom: 2.34vw;
 }
 
 .SideSmallType {
@@ -22,17 +27,33 @@
 .SideIndex span {
   margin-right: 2.6vw;
 }
+.SideIndex span:hover {
+  cursor: pointer;
+  font-weight: 600;
+}
 .SideIndex a {
-  margin-right: 1.4vw;
+  display: inline-block;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 10px 0.21px #ffffff,
+    inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2);
+  width: 1.97vw;
+  text-align: center;
+  line-height: 2.23vw;
   font-weight: 500;
 }
 
 .SideIndex a:hover {
   cursor: pointer;
   font-weight: 600;
+  box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .SelectedType {
   font-weight: 600;
   border-bottom: 4px solid #5c668a;
+}
+
+.Caret {
+  margin-left: 10px;
+  color: #626e94;
 }

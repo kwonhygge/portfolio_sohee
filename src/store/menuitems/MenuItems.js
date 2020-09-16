@@ -17,11 +17,11 @@ export const MenuItems = [
   [
     {
       title: 'Works',
-      path: '/portfolio/works/0',
+      path: '/portfolio/works',
     },
     {
       title: 'Toy Project',
-      path: '/portfolio/toyproject/1',
+      path: '/portfolio/toyproject',
     },
   ],
 ];

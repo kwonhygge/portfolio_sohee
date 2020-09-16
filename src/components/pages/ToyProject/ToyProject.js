@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import styles from './ToyProject.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Book from './Book/Book';
 import Poster from './Poster/Poster';
 import Illustration from './Illustration/Illustration';
-import sideStyles from '../../../containers/Portfolio/Portfolio.module.css';
+import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
 class ToyProject extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      type: {},
+      type: { [0]: true },
     };
   }
 
@@ -25,10 +26,19 @@ class ToyProject extends Component {
 
   render() {
     const { type } = this.state;
+    const { posts } = this.props;
     return (
       <>
         <SideDrawer>
-          <h1 className={sideStyles.SideBigType}>Portfolio </h1>
+          <div className={sideStyles.SideBigType}>
+            <h1>Portfolio </h1>
+            <FontAwesomeIcon
+              className={sideStyles.Caret}
+              icon="caret-down"
+              size="1x"
+            />
+          </div>
+
           <h2 className={sideStyles.SideSmallType}>Toy Project</h2>
           <div className={sideStyles.SideIndex}>
             <span
@@ -111,16 +121,18 @@ class ToyProject extends Component {
               </div>
             )}
           </div>
-          <span
-            id="2"
-            onClick={this.handleClickType}
-            className={type[2] && sideStyles.SelectedType}
-          >
-            illustration
-          </span>
+          <div className={sideStyles.SideIndex}>
+            <span
+              id="2"
+              onClick={this.handleClickType}
+              className={type[2] && sideStyles.SelectedType}
+            >
+              illustration
+            </span>
+          </div>
         </SideDrawer>
         <div className={styles.Contents}>
-          {type[0] && <Book />}
+          {type[0] && <Book posts={posts} />}
           {type[1] && <Poster />}
           {type[2] && <Illustration />}
         </div>

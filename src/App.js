@@ -20,7 +20,7 @@ function App() {
       <Route path="/about" component={About} />
       <Route path="/profile" component={About} />
       <Route path="/resume" component={About} />
-      <Route path="/portfolio/:type/:id" component={Portfolio} />
+      <Route path="/portfolio/:type" component={Portfolio} />
       <Route path="/contact" component={Contact} />
     </Switch>
   );

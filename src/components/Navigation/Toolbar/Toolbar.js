@@ -119,7 +119,7 @@ class Toolbar extends Component {
                   <Link
                     id="1"
                     to={{
-                      pathname: '/portfolio/works/0',
+                      pathname: '/portfolio/works',
                     }}
                     onClick={this.closeMobileMenu}
                   >

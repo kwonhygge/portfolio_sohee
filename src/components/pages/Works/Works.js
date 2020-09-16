@@ -3,15 +3,23 @@ import WorkInfo from './WorkInfo/WorkInfo';
 import styles from './Works.module.css';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
-import sideStyles from '../../../containers/Portfolio/Portfolio.module.css';
+import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
+import { WorksItems } from '../../../store/contents/portfolio/WorksItems';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Works = (props) => {
-  const posts = props.posts;
-  console.log(posts);
+const Works = () => {
   return (
     <>
       <SideDrawer>
-        <h1 className={sideStyles.SideBigType}>Portfolio </h1>
+        <div className={sideStyles.SideBigType}>
+          <h1>Portfolio </h1>
+          <FontAwesomeIcon
+            className={sideStyles.Caret}
+            icon="caret-down"
+            size="1x"
+          />
+        </div>
+
         <h2 className={sideStyles.SideSmallType}>Works</h2>
         <div className={sideStyles.SideIndex}>
           <span className={sideStyles.SelectedType}>Work</span>
@@ -37,11 +45,11 @@ const Works = (props) => {
       </SideDrawer>
       <div className={styles.Contents}>
         <Element name="work1">
-          <WorkInfo post={posts[0]} />
+          <WorkInfo item={WorksItems[0]} />
           <div className={styles.Pic}></div>
         </Element>
         <Element name="work2">
-          <WorkInfo post={posts[1]} />
+          <WorkInfo item={WorksItems[1]} />
           <div className={styles.Pic}></div>
         </Element>
       </div>
