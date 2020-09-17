@@ -7,6 +7,7 @@ const Colors = (props) => {
         {props.colorlist.map((item, index) => {
           return (
             <div
+              key={index}
               style={{
                 background: item,
                 width: '2.08vw',

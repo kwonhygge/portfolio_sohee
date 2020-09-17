@@ -1,37 +1,42 @@
-import React from 'react';
-import aniFirst from '../../../../assets/images/1 만화의집/1.png';
-import aniSecond from '../../../../assets/images/1 만화의집/2.png';
-import aniThird from '../../../../assets/images/1 만화의집/3.jpg';
-import ani4 from '../../../../assets/images/1 만화의집/4.jpg';
-import ani5 from '../../../../assets/images/1 만화의집/5.jpg';
+import React, { useState } from 'react';
+import aniList from '../../../../assets/images/anicenter';
 import styles from './WorkImageFirst.module.css';
+import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
 
-const WorkImageFirst = () => (
-  <>
-    <div className={styles.Container}>
-      <div className={styles.Row}>
-        <div className={styles.Col}>
-          <img src={aniFirst} />
-        </div>
-        <div className={styles.Col}>
-          <img src={aniSecond} />
-        </div>
-        <div className={styles.Col}>
-          <div className={styles.Box1}>
-            <img src={ani4} />
+const WorkImageFirst = () => {
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(!show);
+  };
+
+  return (
+    <>
+      <div onClick={handleClick} className={styles.Container}>
+        <div className={styles.Row}>
+          <div className={styles.Col}>
+            <img src={aniList[0]} />
           </div>
-          <div className={styles.LastBoxRow}>
-            <div className={styles.Box2}>
-              <img src={aniThird} />
+          <div className={styles.Col}>
+            <img src={aniList[1]} />
+          </div>
+          <div className={styles.Col}>
+            <div className={styles.Box1}>
+              <img src={aniList[2]} />
             </div>
-            <div className={styles.Box3}>
-              <img src={ani5} />
+            <div className={styles.LastBoxRow}>
+              <div className={styles.Box2}>
+                <img src={aniList[3]} />
+              </div>
+              <div className={styles.Box3}>
+                <img src={aniList[4]} />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </>
-);
+      <ImageModalAll show={show} modalClosed={handleClick} imgList={aniList} />
+    </>
+  );
+};
 
 export default WorkImageFirst;

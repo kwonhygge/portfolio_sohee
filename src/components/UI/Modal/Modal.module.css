@@ -3,14 +3,15 @@
   top: 50%;
   left: 50%;
   box-sizing: border-box;
-  width: 600px;
+  width: 60%;
   z-index: 500;
   transition: all 0.3s ease-out;
 }
 .Close {
-  position: absolute;
-  top: 2%;
-  right: 0;
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  z-index: 500;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;

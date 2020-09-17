@@ -1,0 +1,18 @@
+.Gallery {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Middle {
+  width: 100%;
+  padding: 0 auto;
+}
+.ImgInModal {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}

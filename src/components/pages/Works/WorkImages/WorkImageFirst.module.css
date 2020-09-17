@@ -1,9 +1,9 @@
 .Container {
   padding: 1.68vw 2vw 0 0;
   background: #d1c2c2;
-
   border-radius: 10px;
   margin-bottom: 10vw;
+  width: 100%;
 }
 .Container:hover {
   cursor: pointer;

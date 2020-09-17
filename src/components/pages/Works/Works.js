@@ -16,6 +16,7 @@ class Works extends Component {
   componentDidMount = () => {
     scroll.scrollToTop();
   };
+
   render() {
     return (
       <>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Modal from '../Modal/Modal';
-import styles from './ImageComponent.module.css';
+import styles from './ImageModalEach.module.css';
 
 class ImageComponent extends Component {
   constructor(props) {
