@@ -15,6 +15,20 @@ const Modal = (props) => {
       >
         {props.children}
       </div>
+      <div
+        className={styles.Info}
+        style={{
+          transform: props.show ? 'scale(1)' : 'scale(0)',
+          opacity: props.show ? '1' : '0',
+        }}
+      >
+        <div>
+          <span>{props.index}</span>
+        </div>
+        <div>
+          <span>{props.name}</span>
+        </div>
+      </div>
       <FontAwesomeIcon
         className={styles.Close}
         onClick={props.modalClosed}

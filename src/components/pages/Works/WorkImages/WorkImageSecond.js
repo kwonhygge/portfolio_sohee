@@ -3,7 +3,7 @@ import styles from './WorkImageSecond.module.css';
 import cuList from '../../../../assets/images/curation';
 import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
 
-const WorkImageSecond = () => {
+const WorkImageSecond = (props) => {
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(!show);
@@ -33,6 +33,8 @@ const WorkImageSecond = () => {
         </div>
       </div>
       <ImageModalAll
+        itemIndx={props.itemIndx}
+        itemName={props.itemName}
         maxSize="450px"
         show={show}
         modalClosed={handleClick}

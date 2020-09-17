@@ -3,7 +3,7 @@ import aniList from '../../../../assets/images/anicenter';
 import styles from './WorkImageFirst.module.css';
 import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
 
-const WorkImageFirst = () => {
+const WorkImageFirst = (props) => {
   const [show, setShow] = useState(false);
   const handleClick = () => {
     setShow(!show);
@@ -34,7 +34,13 @@ const WorkImageFirst = () => {
           </div>
         </div>
       </div>
-      <ImageModalAll show={show} modalClosed={handleClick} imgList={aniList} />
+      <ImageModalAll
+        itemIndx={props.itemIndx}
+        itemName={props.itemName}
+        show={show}
+        modalClosed={handleClick}
+        imgList={aniList}
+      />
     </>
   );
 };

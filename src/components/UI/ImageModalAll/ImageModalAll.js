@@ -7,7 +7,7 @@ class ImageModalAll extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      imgNum: 1,
+      imgNum: 0,
     };
     this.imgLength = props.imgList.length;
   }
@@ -21,16 +21,25 @@ class ImageModalAll extends Component {
       return;
     }
     this.setState((prevState) => ({
-      imgNum: (prevState.imgNum - 1) % this.imgLength,
+      imgNum: prevState.imgNum - 1,
     }));
   };
 
   render() {
     const { imgNum } = this.state;
-    const { show, imgList, maxSize, modalClosed } = this.props;
+    const {
+      itemIndx,
+      itemName,
+      show,
+      imgList,
+      maxSize,
+      modalClosed,
+    } = this.props;
     return (
       <>
         <Modal
+          index={itemIndx}
+          name={itemName}
           show={show}
           modalClosed={modalClosed}
           nextArrow={this.increaseNumber}
