@@ -1,3 +1,11 @@
+.Explanation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 500;
+  transform: rotate(270deg);
+}
+
 .Gallery {
   width: 80%;
   display: flex;
@@ -15,4 +23,10 @@
   width: 100%;
   max-width: 380px;
   height: auto;
+}
+
+.ArrowBtns {
+  position: fixed;
+  right: 0;
+  bottom: 0;
 }

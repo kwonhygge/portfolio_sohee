@@ -21,10 +21,40 @@ const Modal = (props) => {
         icon="times"
         size="1x"
         style={{
-          transform: props.show ? 'translate(-50%, -50%)' : 'scale(0)',
+          transform: props.show ? 'scale(1)' : 'scale(0)',
           opacity: props.show ? '1' : '0',
         }}
       />
+      {props.isMany && (
+        <div className={styles.ArrowBtns}>
+          <div
+            style={{
+              transform: props.show ? 'scale(1)' : 'scale(0)',
+              opacity: props.show ? '1' : '0',
+            }}
+          >
+            {props.imgNum}/{props.imgLength}
+          </div>
+          <FontAwesomeIcon
+            onClick={props.prevArrow}
+            icon="times"
+            size="1x"
+            style={{
+              transform: props.show ? 'scale(1)' : 'scale(0)',
+              opacity: props.show ? '1' : '0',
+            }}
+          />
+          <FontAwesomeIcon
+            onClick={props.nextArrow}
+            icon="times"
+            size="1x"
+            style={{
+              transform: props.show ? 'scale(1)' : 'scale(0)',
+              opacity: props.show ? '1' : '0',
+            }}
+          />
+        </div>
+      )}
     </>
   );
 };
