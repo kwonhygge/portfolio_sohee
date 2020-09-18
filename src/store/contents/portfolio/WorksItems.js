@@ -8,7 +8,8 @@ export const WorksItems = [
       date: '2018년 11월 ~ 2019년 2월',
       explanation: '',
     },
-    objective: '서울애니메이션센터 1층(만화의집) 리모델링',
+    boldObj: ' 공간 이용안내',
+    objective: '서울애니메이션센터 1층(만화의집)의 ',
     role: {
       role: '싸인물 기획 및 디자인',
       explanation: '*로고, 아이콘 제외',

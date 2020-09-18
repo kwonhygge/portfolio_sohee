@@ -23,6 +23,7 @@
   width: 100%;
   max-width: 380px;
   height: auto;
+  border: 3px solid #000;
 }
 
 .ArrowBtns {

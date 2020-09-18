@@ -19,16 +19,17 @@ const Works = (props) => {
         <div>
           <h1>기간</h1>
           <span>{item.period.date}</span>
-          <h2>{item.period.explanation}</h2>
+          <h2>&nbsp;{item.period.explanation}</h2>
         </div>
         <div>
           <h1>목표</h1>
           <span>{item.objective}</span>
+          <span style={{ fontWeight: '700' }}>{item.boldObj}</span>
         </div>
         <div>
           <h1>역할</h1>
           <span>{item.role.role}</span>
-          <h2>{item.role.explanation}</h2>
+          <h2>&nbsp;{item.role.explanation}</h2>
         </div>
         <div>
           <h1>사용 프로그램</h1>

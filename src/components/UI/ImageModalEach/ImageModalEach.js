@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Modal from '../Modal/Modal';
 import styles from './ImageModalEach.module.css';
 
-class ImageComponent extends Component {
+class ImageModalEach extends Component {
   constructor(props) {
     super(props);
     this.state = { isOpen: false };
@@ -13,7 +13,7 @@ class ImageComponent extends Component {
   };
   render() {
     const { isOpen } = this.state;
-    const { imgSrc, imgAlt } = this.props;
+    const { itemIndx, itemName, imgSrc, imgAlt } = this.props;
 
     return (
       <>
@@ -23,7 +23,12 @@ class ImageComponent extends Component {
           alt={imgAlt}
           onClick={this.handleShowDialog}
         ></img>
-        <Modal show={isOpen} modalClosed={this.handleShowDialog}>
+        <Modal
+          index={itemIndx}
+          name={itemName}
+          show={isOpen}
+          modalClosed={this.handleShowDialog}
+        >
           <img
             className={styles.ImgInModal}
             src={imgSrc}
@@ -35,4 +40,4 @@ class ImageComponent extends Component {
   }
 }
 
-export default ImageComponent;
+export default ImageModalEach;

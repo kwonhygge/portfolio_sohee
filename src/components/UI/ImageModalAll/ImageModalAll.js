@@ -56,7 +56,6 @@ class ImageModalAll extends Component {
                 className={styles.ImgInModal}
                 style={{ maxWidth: maxSize }}
               />
-              <h1>{imgList[imgNum].name}</h1>
             </div>
           </div>
         </Modal>

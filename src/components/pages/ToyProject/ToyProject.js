@@ -135,7 +135,7 @@ class ToyProject extends Component {
           </div>
         </SideDrawer>
         <div className={styles.Contents}>
-          {type[0] && <Book posts={posts} />}
+          {type[0] && <Book />}
           {type[1] && <Poster />}
           {type[2] && <Illustration />}
         </div>

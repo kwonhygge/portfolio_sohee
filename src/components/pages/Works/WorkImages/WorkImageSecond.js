@@ -35,7 +35,7 @@ const WorkImageSecond = (props) => {
       <ImageModalAll
         itemIndx={props.itemIndx}
         itemName={props.itemName}
-        maxSize="450px"
+        maxSize="480px"
         show={show}
         modalClosed={handleClick}
         imgList={cuList}
