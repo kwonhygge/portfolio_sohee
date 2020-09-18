@@ -14,21 +14,21 @@ const WorkImageFirst = (props) => {
       <div onClick={handleClick} className={styles.Container}>
         <div className={styles.Row}>
           <div className={styles.Col}>
-            <img src={aniList[0]} />
+            <img src={aniList[0].src} alt={aniList[0].alt} />
           </div>
           <div className={styles.Col}>
-            <img src={aniList[1]} />
+            <img src={aniList[1].src} alt={aniList[1].alt} />
           </div>
           <div className={styles.Col}>
             <div className={styles.Box1}>
-              <img src={aniList[2]} />
+              <img src={aniList[2].src} alt={aniList[2].alt} />
             </div>
             <div className={styles.LastBoxRow}>
               <div className={styles.Box2}>
-                <img src={aniList[3]} />
+                <img src={aniList[3].src} alt={aniList[3].alt} />
               </div>
               <div className={styles.Box3}>
-                <img src={aniList[4]} />
+                <img src={aniList[4].src} alt={aniList[4].alt} />
               </div>
             </div>
           </div>
@@ -37,6 +37,7 @@ const WorkImageFirst = (props) => {
       <ImageModalAll
         itemIndx={props.itemIndx}
         itemName={props.itemName}
+        maxSize="350px"
         show={show}
         modalClosed={handleClick}
         imgList={aniList}

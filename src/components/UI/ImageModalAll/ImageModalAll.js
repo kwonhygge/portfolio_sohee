@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Modal from '../Modal/Modal';
 import styles from './ImageModalAll.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ImageModalAll extends Component {
   constructor(props) {
@@ -35,6 +34,7 @@ class ImageModalAll extends Component {
       maxSize,
       modalClosed,
     } = this.props;
+
     return (
       <>
         <Modal

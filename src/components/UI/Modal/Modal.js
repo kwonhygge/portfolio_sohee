@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Modal.module.css';
 import Backdrop from '../Backdrop/Backdrop';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Modal = (props) => {
   return (
     <>
@@ -50,6 +50,7 @@ const Modal = (props) => {
         {props.isMany && (
           <div className={styles.ArrowBtns}>
             <div
+              onClick={props.nextArrow}
               className={styles.PicNum}
               style={{
                 transform: props.show ? 'scale(1)' : 'scale(0)',
@@ -74,7 +75,7 @@ const Modal = (props) => {
                 fill="none"
                 viewBox="0 0 21 31"
               >
-                <path d="M2 2L18 15L2 29.5" stroke="black" stroke-width="3" />
+                <path d="M2 2L18 15L2 29.5" stroke="black" strokeWidth="3" />
               </svg>
               <svg
                 onClick={props.prevArrow}
@@ -83,7 +84,7 @@ const Modal = (props) => {
                 viewBox="0 0 21 31"
                 fill="none"
               >
-                <path d="M19 2L3 15L19 29.5" stroke="black" stroke-width="3" />
+                <path d="M19 2L3 15L19 29.5" stroke="black" strokeWidth="3" />
               </svg>
             </div>
           </div>
