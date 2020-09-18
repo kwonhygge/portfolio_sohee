@@ -22,12 +22,8 @@ const Modal = (props) => {
           opacity: props.show ? '1' : '0',
         }}
       >
-        <div>
-          <span>{props.index}</span>
-        </div>
-        <div>
-          <span>{props.name}</span>
-        </div>
+        <span>{props.index}</span>
+        <span>{props.name}</span>
       </div>
       <FontAwesomeIcon
         className={styles.Close}
@@ -47,7 +43,9 @@ const Modal = (props) => {
               opacity: props.show ? '1' : '0',
             }}
           >
-            {props.imgNum}/{props.imgLength}
+            <span className={styles.PicNum}>
+              {props.imgNum}-0{props.imgLength}
+            </span>
           </div>
           <FontAwesomeIcon
             onClick={props.prevArrow}
