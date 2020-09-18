@@ -1,4 +1,8 @@
-.Modal {
+.Modal svg:hover {
+  cursor: pointer;
+}
+
+.ModalContent {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -39,10 +43,21 @@
   z-index: 500;
   bottom: 10%;
   right: 5%;
-  transform: rotate(270deg);
 }
-.PicNum {
+.PicNum span {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 1.71vw;
+  margin-bottom: 4.89vw;
 }
+.Btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vw;
+}
+
 /* @media (min-width: 600px) {
   .Modal {
     width: 500px;
