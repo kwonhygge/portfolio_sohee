@@ -41,7 +41,7 @@
 .ArrowBtns {
   position: fixed;
   z-index: 600;
-  bottom: 10%;
+  bottom: 5%;
   right: 5%;
 }
 .PicNum span {

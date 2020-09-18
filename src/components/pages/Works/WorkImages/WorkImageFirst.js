@@ -34,14 +34,15 @@ const WorkImageFirst = (props) => {
           </div>
         </div>
       </div>
-      <ImageModalAll
-        itemIndx={props.itemIndx}
-        itemName={props.itemName}
-        maxSize="350px"
-        show={show}
-        modalClosed={handleClick}
-        imgList={aniList}
-      />
+      {show && (
+        <ImageModalAll
+          itemIndx={props.itemIndx}
+          itemName={props.itemName}
+          show={show}
+          modalClosed={handleClick}
+          imgList={aniList}
+        />
+      )}
     </>
   );
 };
