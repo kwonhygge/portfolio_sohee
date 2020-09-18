@@ -1,23 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio_sohee/static/css/main.b48d3c13.chunk.css",
-    "main.js": "/portfolio_sohee/static/js/main.eeee8535.chunk.js",
-    "main.js.map": "/portfolio_sohee/static/js/main.eeee8535.chunk.js.map",
+    "main.css": "/portfolio_sohee/static/css/main.ea0037f7.chunk.css",
+    "main.js": "/portfolio_sohee/static/js/main.31608d08.chunk.js",
+    "main.js.map": "/portfolio_sohee/static/js/main.31608d08.chunk.js.map",
     "runtime-main.js": "/portfolio_sohee/static/js/runtime-main.4b77025c.js",
     "runtime-main.js.map": "/portfolio_sohee/static/js/runtime-main.4b77025c.js.map",
-    "static/js/2.8e76f24f.chunk.js": "/portfolio_sohee/static/js/2.8e76f24f.chunk.js",
-    "static/js/2.8e76f24f.chunk.js.map": "/portfolio_sohee/static/js/2.8e76f24f.chunk.js.map",
+    "static/js/2.c9babe22.chunk.js": "/portfolio_sohee/static/js/2.c9babe22.chunk.js",
+    "static/js/2.c9babe22.chunk.js.map": "/portfolio_sohee/static/js/2.c9babe22.chunk.js.map",
     "index.html": "/portfolio_sohee/index.html",
-    "precache-manifest.59040ddb10a6b694669321b90141f956.js": "/portfolio_sohee/precache-manifest.59040ddb10a6b694669321b90141f956.js",
+    "precache-manifest.1a55b4462467caf9014568e42ef58495.js": "/portfolio_sohee/precache-manifest.1a55b4462467caf9014568e42ef58495.js",
     "service-worker.js": "/portfolio_sohee/service-worker.js",
-    "static/css/main.b48d3c13.chunk.css.map": "/portfolio_sohee/static/css/main.b48d3c13.chunk.css.map",
-    "static/js/2.8e76f24f.chunk.js.LICENSE.txt": "/portfolio_sohee/static/js/2.8e76f24f.chunk.js.LICENSE.txt",
+    "static/css/main.ea0037f7.chunk.css.map": "/portfolio_sohee/static/css/main.ea0037f7.chunk.css.map",
+    "static/js/2.c9babe22.chunk.js.LICENSE.txt": "/portfolio_sohee/static/js/2.c9babe22.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/portfolio_sohee/static/media/1.c4b8d5a0.png",
+    "static/media/2.jpg": "/portfolio_sohee/static/media/2.44753d85.jpg",
+    "static/media/2.png": "/portfolio_sohee/static/media/2.e1b1ec95.png",
+    "static/media/3.jpg": "/portfolio_sohee/static/media/3.96282272.jpg",
+    "static/media/4.jpg": "/portfolio_sohee/static/media/4.c34cb1b8.jpg",
+    "static/media/5.jpg": "/portfolio_sohee/static/media/5.ce367e87.jpg",
     "static/media/amelie.jpg": "/portfolio_sohee/static/media/amelie.8ffb1472.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4b77025c.js",
-    "static/js/2.8e76f24f.chunk.js",
-    "static/css/main.b48d3c13.chunk.css",
-    "static/js/main.eeee8535.chunk.js"
+    "static/js/2.c9babe22.chunk.js",
+    "static/css/main.ea0037f7.chunk.css",
+    "static/js/main.31608d08.chunk.js"
   ]
 }
