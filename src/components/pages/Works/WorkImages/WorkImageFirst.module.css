@@ -1,9 +1,11 @@
 .Container {
+  position: relative;
   padding: 1.68vw 2vw 0 0;
   background: #d1c2c2;
   border-radius: 10px;
   margin-bottom: 10vw;
   width: 100%;
+  margin-top: 0.62vw;
 }
 .Container:hover {
   cursor: pointer;
@@ -52,4 +54,14 @@
   width: 100%;
   border: 1px solid #828282;
   box-sizing: border-box;
+}
+
+.More {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: -17px;
+  right: 10px;
+  font-size: 0.67vw;
+  color: #828282;
 }

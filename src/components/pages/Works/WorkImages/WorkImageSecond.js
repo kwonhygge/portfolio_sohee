@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './WorkImageSecond.module.css';
 import cuList from '../../../../assets/images/curation';
 import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const WorkImageSecond = (props) => {
   const [show, setShow] = useState(false);
   const handleClick = () => {
@@ -12,6 +12,10 @@ const WorkImageSecond = (props) => {
   return (
     <>
       <div onClick={handleClick} className={styles.Container}>
+        <div className={styles.More}>
+          <span>더보기&nbsp;&nbsp;</span>
+          <FontAwesomeIcon icon="caret-down" size="1x" />
+        </div>
         <div className={styles.Row}>
           <div className={styles.Left}>
             <img src={cuList[0].src} alt={cuList[0].alt} />

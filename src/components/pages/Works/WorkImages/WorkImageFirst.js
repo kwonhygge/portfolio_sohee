@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import aniList from '../../../../assets/images/anicenter';
 import styles from './WorkImageFirst.module.css';
 import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const WorkImageFirst = (props) => {
   const [show, setShow] = useState(false);
@@ -12,6 +13,11 @@ const WorkImageFirst = (props) => {
   return (
     <>
       <div onClick={handleClick} className={styles.Container}>
+        <div className={styles.More}>
+          <span>더보기&nbsp;&nbsp;</span>
+          <FontAwesomeIcon icon="caret-down" size="1x" />
+        </div>
+
         <div className={styles.Row}>
           <div className={styles.Col}>
             <img src={aniList[0].src} alt={aniList[0].alt} />

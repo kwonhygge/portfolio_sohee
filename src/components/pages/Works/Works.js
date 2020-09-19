@@ -56,6 +56,7 @@ class Works extends Component {
         <div className={styles.Contents}>
           <Element name="work1">
             <WorkInfo item={WorksItems[0]} />
+
             <WorkImageFirst
               itemIndx={WorksItems[0].index}
               itemName={WorksItems[0].name}
