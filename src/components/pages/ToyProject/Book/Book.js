@@ -14,6 +14,7 @@ const Book = () => (
     </Element>
     <Element name="book2">
       <ToyInfo item={ToyItems[0][1]} />
+
       <div className={styles.Img}>
         <ImageModalEach
           itemIndx={ToyItems[0][1].index}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Modal from '../Modal/Modal';
 import styles from './ImageModalEach.module.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class ImageModalEach extends Component {
   constructor(props) {
     super(props);
@@ -17,12 +17,14 @@ class ImageModalEach extends Component {
 
     return (
       <>
-        <img
-          className={styles.SmallImg}
-          src={imgSrc}
-          alt={imgAlt}
-          onClick={this.handleShowDialog}
-        ></img>
+        <div className={styles.SmallImg} onClick={this.handleShowDialog}>
+          <div className={styles.More}>
+            <span>크게 보기&nbsp;&nbsp;</span>
+            <FontAwesomeIcon icon="caret-down" size="1x" />
+          </div>
+          <img src={imgSrc} alt={imgAlt}></img>
+        </div>
+
         <Modal
           index={itemIndx}
           name={itemName}
