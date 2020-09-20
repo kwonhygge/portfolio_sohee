@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Colors.module.css';
 const Colors = (props) => {
-  console.log('내가 받은거', props.colorlist);
   return (
     <>
       <div className={styles.Colors}>

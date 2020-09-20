@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 5.57vw;
 }
 
 .Images {
@@ -9,6 +10,7 @@
   justify-content: center;
   align-items: center;
   width: 30vw;
+  margin-bottom: 0.72vw;
 }
 .Image {
   border: 2px solid #f2f2f2;
@@ -22,6 +24,24 @@
   width: 100%;
 }
 
+.PosterName {
+  margin-left: 1.5vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+}
+.PosterName span:nth-child(1) {
+  color: #828282;
+  margin-right: 0.78vw;
+}
+
 .Next {
-  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 0.88vw;
+  cursor: pointer;
+}
+.Next span {
+  margin-right: 0.5vw;
 }

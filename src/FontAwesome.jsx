@@ -5,6 +5,7 @@ import {
   faBars,
   faCaretDown,
   faCaretUp,
+  faAngleRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(faSmile);
@@ -12,3 +13,4 @@ library.add(faTimes);
 library.add(faBars);
 library.add(faCaretDown);
 library.add(faCaretUp);
+library.add(faAngleRight);
