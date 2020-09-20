@@ -40,7 +40,7 @@ export const ToyItems = [
       period: '2016년 8월',
       objective: '',
       boldObj: '영화 포스터 제작',
-      program: 'Photoshop, illustration',
+      program: 'Photoshop, illustrator',
     },
     {
       index: 'Poster 2',
@@ -50,7 +50,7 @@ export const ToyItems = [
       period: '2019년 8월',
       objective: '',
       boldObj: '영화 포스터 제작',
-      program: 'Photoshop, illustration',
+      program: 'Photoshop, illustrator',
     },
     {
       index: 'Poster 3',
@@ -60,7 +60,7 @@ export const ToyItems = [
       period: '2016년 11월',
       objective: '',
       boldObj: '축제 포스터 제작',
-      program: 'Photoshop, illustration',
+      program: 'Photoshop, illustrator',
     },
   ],
 ];

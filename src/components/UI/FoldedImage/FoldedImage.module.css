@@ -1,0 +1,27 @@
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+}
+.Image {
+  border: 2px solid #f2f2f2;
+  box-shadow: -4px -4px 10px 0.21px #ffffff,
+    inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform-origin: center left;
+}
+
+.Image img {
+  width: 100%;
+}
+
+.Next {
+  position: relative;
+}

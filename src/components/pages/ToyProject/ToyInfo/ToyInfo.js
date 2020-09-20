@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Colors from '../../../UI/Colors/Colors';
 import styles from '../../../../containers/Portfolio/InfoStyle.module.css';
 import bookStyles from './ToyInfo.module.css';
 
 const ToyInfo = (props) => {
   const item = props.item;
+
   return (
     <>
       <div className={styles.Container}>
