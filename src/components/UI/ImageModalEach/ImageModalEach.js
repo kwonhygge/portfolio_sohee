@@ -13,11 +13,22 @@ class ImageModalEach extends Component {
   };
   render() {
     const { isOpen } = this.state;
-    const { itemIndx, itemName, imgSrc, imgAlt } = this.props;
+    const {
+      itemIndx,
+      itemName,
+      imgSrc,
+      imgAlt,
+      maxWidth,
+      smallImgWidth,
+    } = this.props;
 
     return (
       <>
-        <div className={styles.SmallImg} onClick={this.handleShowDialog}>
+        <div
+          className={styles.SmallImg}
+          style={{ width: `${smallImgWidth}%` }}
+          onClick={this.handleShowDialog}
+        >
           <div className={styles.More}>
             <span>크게 보기&nbsp;&nbsp;</span>
             <FontAwesomeIcon icon="caret-down" size="1x" />
@@ -33,6 +44,7 @@ class ImageModalEach extends Component {
         >
           <img
             className={styles.ImgInModal}
+            style={{ maxWidth: `${maxWidth}px` }}
             src={imgSrc}
             onClick={this.handleShowDialog}
           ></img>

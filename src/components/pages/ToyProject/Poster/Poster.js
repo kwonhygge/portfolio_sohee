@@ -5,6 +5,10 @@ import { ToyItems } from '../../../../store/contents/portfolio/ToyItems';
 import StackedImages from '../../../UI/StackedImages/StackedImages';
 import beastList from '../../../../assets/images/poster/beast';
 import amelieList from '../../../../assets/images/poster/amelie';
+import ImageModalEach from '../../../UI/ImageModalEach/ImageModalEach';
+import Festival from '../../../../assets/images/poster/';
+import styles from './Poster.module.css';
+
 class Poster extends Component {
   constructor() {
     super();
@@ -41,7 +45,16 @@ class Poster extends Component {
         </Element>
         <Element name="poster3">
           <ToyInfo item={ToyItems[1][2]} />
-          <div style={{ width: '40px', height: '500px' }}></div>
+          <div className={styles.Img}>
+            <ImageModalEach
+              itemIndx={ToyItems[1][2].index}
+              itemName={ToyItems[1][2].name}
+              smallImgWidth={50}
+              imgSrc={Festival.src}
+              imgAlt={Festival.alt}
+              maxWidth={400}
+            />
+          </div>
         </Element>
       </>
     );
