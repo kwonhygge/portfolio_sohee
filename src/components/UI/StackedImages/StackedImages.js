@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import styles from './FoldedImage.module.css';
+import styles from './StackedImages.module.css';
 
-class FoldedImage extends Component {
+class StackedImages extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -58,4 +58,4 @@ class FoldedImage extends Component {
   }
 }
 
-export default FoldedImage;
+export default StackedImages;
