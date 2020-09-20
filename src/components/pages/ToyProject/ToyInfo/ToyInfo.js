@@ -4,7 +4,9 @@ import styles from '../../../../containers/Portfolio/InfoStyle.module.css';
 import bookStyles from './ToyInfo.module.css';
 
 const ToyInfo = (props) => {
-  const item = props.item;
+  const { colorNum, length, item } = props;
+  const indx = colorNum % length;
+  console.log(item.colors[indx]);
 
   return (
     <>
@@ -33,7 +35,9 @@ const ToyInfo = (props) => {
               <span>{item.program}</span>
             </div>
           </div>
-          <Colors colorlist={item.colors} />
+          <Colors
+            colorlist={colorNum === undefined ? item.colors : item.colors[indx]}
+          />
         </div>
       </div>
     </>

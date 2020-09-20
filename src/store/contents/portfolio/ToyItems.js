@@ -35,7 +35,10 @@ export const ToyItems = [
     {
       index: 'Poster 1',
       name: '아멜리에',
-      colors: ['#BB2F20', '#DD7D04', '#2B3F0A'],
+      colors: [
+        ['#BB2F20', '#DD7D04', '#E6E2D7'],
+        ['#BB2F20', '#DD7D04', '#2B3F0A'],
+      ],
       member: '개인',
       period: '2016년 8월',
       objective: '',
@@ -45,7 +48,11 @@ export const ToyItems = [
     {
       index: 'Poster 2',
       name: '신비한 동물사전',
-      colors: ['#3A60B5', '#B5EEFF', '#59268F'],
+      colors: [
+        ['#3A60B5', '#B5EEFF', '#59268F'],
+        ['#CCD0EB', '#FFC5C9', '#FDFCFC'],
+        ['#68C246', '#DEFFCA', '#5A4632'],
+      ],
       member: '개인',
       period: '2019년 8월',
       objective: '',

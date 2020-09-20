@@ -4,27 +4,11 @@ import styles from './StackedImages.module.css';
 class StackedImages extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      imgNum: 0,
-    };
     this.imgLength = props.imgList.length;
   }
-  increaseNumber = () => {
-    this.setState((prevState) => ({
-      imgNum: (prevState.imgNum + 1) % this.imgLength,
-    }));
-  };
-  decreaseNumber = () => {
-    if (this.state.imgNum === 0) {
-      return;
-    }
-    this.setState((prevState) => ({
-      imgNum: prevState.imgNum - 1,
-    }));
-  };
+
   render() {
-    const { imgNum } = this.state;
-    const { imgList, marginLeft } = this.props;
+    const { imgList, marginLeft, imgNum, nextClick } = this.props;
 
     return (
       <>
@@ -37,6 +21,7 @@ class StackedImages extends Component {
 
               return (
                 <div
+                  key={index}
                   className={styles.Image}
                   style={{
                     zIndex: `${zIndex}`,
@@ -49,7 +34,7 @@ class StackedImages extends Component {
               );
             })}
           </div>
-          <div className={styles.Next} onClick={this.increaseNumber}>
+          <div className={styles.Next} onClick={nextClick}>
             Next
           </div>
         </div>
