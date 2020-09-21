@@ -1,7 +1,7 @@
 .Dropdown {
   position: absolute;
-  top: 11vh;
-  left: -3vh;
+  top: 5.4vw;
+  left: -1vw;
   display: flex;
   flex-direction: column;
   width: 97%;
