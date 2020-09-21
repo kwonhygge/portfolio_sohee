@@ -37,3 +37,8 @@
     max-width: 450px;
   }
 }
+@media (max-width: 1920px) and (min-width: 1441px) {
+  .ImgInModal {
+    max-width: 600px;
+  }
+}
