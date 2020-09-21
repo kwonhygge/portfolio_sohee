@@ -1,8 +1,12 @@
 import React from 'react';
+import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 
 const Profile = () => (
   <>
-    <h1>Profile</h1>
+    <SideDrawer>
+      <h1>Profile test</h1>
+    </SideDrawer>
+    <h1>Profile test</h1>
   </>
 );
 
