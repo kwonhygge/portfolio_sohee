@@ -79,6 +79,7 @@
 @media (max-width: 768px) {
   .MenuIcon {
     display: block;
+    float: right;
   }
   .ToolbarContent {
     width: 90%;
