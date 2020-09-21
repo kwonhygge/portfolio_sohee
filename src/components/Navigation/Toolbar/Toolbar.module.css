@@ -26,7 +26,7 @@
 .NavItems {
   font-family: 'Poppins';
   font-weight: 600;
-  font-size: 2.2vh;
+  font-size: 1.14vw;
   display: flex;
   margin-left: 11.8vw;
 }
@@ -56,6 +56,18 @@
 .Caret {
   margin-left: 10px;
   color: #626e94;
+}
+.HomeLogo {
+  width: 4.8vw;
+  height: 4.8vw;
+  max-width: 70px;
+  max-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomeLogo svg {
+  max-width: 25px;
 }
 
 /* tablet */
