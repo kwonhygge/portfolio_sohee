@@ -31,3 +31,9 @@
   right: 0;
   bottom: 0;
 }
+
+@media (min-width: 1440px) {
+  .ImgInModal {
+    max-width: 450px;
+  }
+}
