@@ -1,111 +1,85 @@
 .Contact {
-  width: 100%;
-  height: 80%;
+  margin-left: 29%;
+  font-family: 'Poppins', sans-serif;
+  width: 49.16vw;
+}
+.Header {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin-bottom: 0.5vw;
+  margin-left: 2vw;
+}
+.Header h1 {
+  color: #5c668a;
+
+  font-size: 2.08vw;
+  line-height: 4.68vw;
+  font-weight: 700;
+}
+.Bubble {
+  width: 8.12vw;
+  margin-left: 1.25vw;
+}
+.Bubble img {
+  width: 100%;
 }
 
-.CardContainer {
-  width: 22vw;
-  text-align: center;
-  border-radius: 8px;
-  overflow: hidden;
-  background: #b9c2e6;
-  padding: 1vw 0.7vw;
+.Card img {
+  width: 100%;
+  margin-bottom: 2vw;
 }
 
-.CardHeader {
-  padding: 60px 40px 30px 40px;
-}
+/*
 
-.Pic {
-  display: inline-block;
-  padding: 8px;
-  margin: auto;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 10px #ffffff,
-    inset 4px 4px 10px rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-}
-.Pic img {
-  width: 100px;
-  height: 100px;
-  display: block;
-  border-radius: 50%;
-}
-
-.Name {
-  padding: 12px;
-  font-size: 2vw;
-  line-height: 2vw;
-  font-weight: bold;
-}
-.Pos {
-  font-size: 0.8vw;
-  font-weight: bold;
-}
-
-.CardFooter {
+.Card {
   display: flex;
   flex-direction: column;
-  padding: 0 50px 40px 50px;
 }
-.CardFooter span {
-  margin-bottom: 10px;
-  border-radius: 10px;
-
-  font-family: 'Poppins';
+.CardHeader h1 {
+  margin-left: 0.5vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2.6vw;
+  font-weight: 700;
 }
-
-.Phone {
-  padding: 24px 15px;
-  font-size: 15px;
+.CardHeader h2 {
   font-weight: 600;
-  background: #333333;
-  color: #fff;
+  font-size: 0.88vw;
+  line-height: 2.6vw;
+  color: #828282;
+}
+.CardContent {
+  display: flex;
+  justify-content: space-between;
+}
+.Figures {
+  display: flex;
+  flex-direction: column;
 }
 
-.Email {
-  font-weight: 500;
-  padding: 25px 15px;
-  font-size: 13px;
-  background: #fff;
+.Figures > div {
+  box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.7),
+    inset 6px 6px 20px rgba(5, 0, 0, 0.1);
+  margin-top: 0.62vw;
 }
-
-.Message {
-  position: absolute;
-  top: 50%;
-  left: -50%;
-  padding: 20px 12px;
-  background: #eeeeee;
-  border: 2px solid #fff;
-  border-radius: 8px;
-  /* border: 2px solid #fff; */
-  font-family: 'Poppins';
-  font-weight: 600;
-  color: #5c668a;
+.Figures > div:nth-child(1) {
+  width: 3.43vw;
+  height: 3.43vw;
 }
-.Message:after,
-.Message:before {
-  left: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: ' ';
-  height: 0;
+.Figures > div:nth-child(2) {
+  border-radius: 50%;
+  width: 3.43vw;
+  height: 3.43vw;
+}
+.Figures > div:nth-child(3) {
   width: 0;
-  position: absolute;
-  pointer-events: none;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #eee;
 }
-
-.Message:after {
-  border-color: rgba(238, 238, 238, 0);
-  border-left-color: #eeeeee;
-  border-width: 14px;
-  margin-top: -14px;
-}
-.Message:before {
-  border-color: rgba(255, 255, 255, 0);
-  border-left-color: #fff;
-  border-width: 10px;
-  margin-top: -10px;
-}
+.Phone h1 {
+  font-size: 0.88vw;
+  color: #828282;
+  line-height: 2.6vw;
+  font-weight: 700;
+} */

@@ -86,8 +86,7 @@ class Toolbar extends Component {
                   <Link
                     id="0"
                     to={{
-                      pathname: '/about',
-                      state: { type: 'profile', indx: 0 },
+                      pathname: '/about/profile',
                     }}
                     onClick={this.closeMobileMenu}
                   >

@@ -17,9 +17,7 @@ function App() {
   const routes = (
     <Switch>
       <Route path="/" exact component={Main} />
-      <Route path="/about" component={About} />
-      <Route path="/profile" component={About} />
-      <Route path="/resume" component={About} />
+      <Route path="/about/:type" component={About} />
       <Route path="/portfolio/:type" component={Portfolio} />
       <Route path="/contact" component={Contact} />
     </Switch>

@@ -2,15 +2,11 @@ export const MenuItems = [
   [
     {
       title: 'Profile',
-      path: '/profile',
-      type: 'profile',
-      indx: 0,
+      path: '/about/profile',
     },
     {
       title: 'Resume',
-      path: '/resume',
-      type: 'resume',
-      indx: 0,
+      path: '/about/resume',
     },
   ],
 

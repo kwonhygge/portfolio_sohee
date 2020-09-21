@@ -49,10 +49,10 @@ class Poster extends Component {
             <ImageModalEach
               itemIndx={ToyItems[1][2].index}
               itemName={ToyItems[1][2].name}
-              smallImgWidth={50}
+              smallImgWidth={35}
               imgSrc={Festival.src}
               imgAlt={Festival.alt}
-              maxWidth={400}
+              maxWidth={480}
             />
           </div>
         </Element>

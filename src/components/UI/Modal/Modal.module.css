@@ -19,7 +19,6 @@
   z-index: 500;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .Info span {
   transform-origin: 0 0;
@@ -27,6 +26,9 @@
   font-weight: 600;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+.Info span:nth-child(2) {
+  margin-top: 15.62vw;
 }
 
 .Close {
@@ -57,10 +59,3 @@
   justify-content: space-between;
   height: 5vw;
 }
-
-/* @media (min-width: 600px) {
-  .Modal {
-    width: 500px;
-    left: calc(50% - 250px);
-  }
-} */
