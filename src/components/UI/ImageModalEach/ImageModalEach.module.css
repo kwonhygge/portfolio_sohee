@@ -25,8 +25,8 @@
   font-size: 0.67vw;
   color: #828282;
 }
-/* @media (min-width: 1440px) {
+@media (min-width: 1680px) {
   .ImgInModal {
-    max-width: 1000px;
+    max-width: 600px;
   }
-} */
+}
