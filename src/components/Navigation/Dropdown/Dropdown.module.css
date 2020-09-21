@@ -4,7 +4,7 @@
   left: -1vw;
   display: flex;
   flex-direction: column;
-  width: 97%;
+  width: 85%;
   box-shadow: -7px -7px 10px 0.5px rgba(255, 255, 255, 0.6),
     7px 7px 10px 0.5px rgba(5, 0, 0, 0.3),
     inset 0px 0px 4px rgba(255, 255, 255, 0.3);
@@ -21,7 +21,7 @@
   font-family: 'Poppins';
 }
 .Dropdown li {
-  line-height: 50px;
+  line-height: 2.6vw;
 }
 .Dropdown li:hover {
   box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
