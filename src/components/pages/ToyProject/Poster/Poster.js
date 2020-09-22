@@ -14,8 +14,15 @@ class Poster extends Component {
     super();
     this.state = {
       imgNum: 0,
+      maxSize: 480,
     };
+    if (window.innerWidth <= 1024) {
+      this.setState({ maxSize: 480 });
+    } else {
+      this.setState({ maxSize: 600 });
+    }
   }
+
   increaseNumber = () => {
     this.setState((prevState) => ({
       imgNum: prevState.imgNum + 1,
@@ -52,7 +59,7 @@ class Poster extends Component {
               smallImgWidth={35}
               imgSrc={Festival.src}
               imgAlt={Festival.alt}
-              maxWidth={480}
+              maxWidth={this.state.maxSize}
             />
           </div>
         </Element>

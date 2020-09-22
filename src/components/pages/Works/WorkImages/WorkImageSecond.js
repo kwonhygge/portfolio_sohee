@@ -5,8 +5,16 @@ import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const WorkImageSecond = (props) => {
   const [show, setShow] = useState(false);
+  const [maxSize, setMaxSize] = useState(450);
   const handleClick = () => {
     setShow(!show);
+    if (window.innerWidth <= 1024) {
+      setMaxSize(450);
+    } else if (window.innerWidth < 1920) {
+      setMaxSize(480);
+    } else {
+      setMaxSize(600);
+    }
   };
 
   return (
@@ -40,7 +48,7 @@ const WorkImageSecond = (props) => {
         <ImageModalAll
           itemIndx={props.itemIndx}
           itemName={props.itemName}
-          maxSize="515px"
+          maxSize={maxSize}
           show={show}
           modalClosed={handleClick}
           imgList={cuList}

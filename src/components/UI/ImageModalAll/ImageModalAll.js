@@ -54,7 +54,7 @@ class ImageModalAll extends Component {
                 src={imgList ? imgList[imgNum].src : ''}
                 alt={imgList[imgNum].alt}
                 className={styles.ImgInModal}
-                style={{ maxWidth: maxSize }}
+                style={{ maxWidth: `${maxSize}px` }}
               />
             </div>
           </div>
