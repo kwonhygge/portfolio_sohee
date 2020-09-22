@@ -13,14 +13,7 @@ class ImageModalEach extends Component {
   };
   render() {
     const { isOpen } = this.state;
-    const {
-      itemIndx,
-      itemName,
-      imgSrc,
-      imgAlt,
-      maxWidth,
-      smallImgWidth,
-    } = this.props;
+    const { itemIndx, itemName, imgSrc, imgAlt, smallImgWidth } = this.props;
 
     return (
       <>
@@ -44,7 +37,6 @@ class ImageModalEach extends Component {
         >
           <img
             className={styles.ImgInModal}
-            style={{ maxWidth: `${maxWidth}px` }}
             src={imgSrc}
             onClick={this.handleShowDialog}
           ></img>
