@@ -18,6 +18,8 @@ class Poster extends Component {
     };
     if (window.innerWidth <= 1024) {
       this.setState({ maxSize: 480 });
+    } else if (window.innerWidth <= 1680) {
+      this.setState({ maxSize: 550 });
     } else {
       this.setState({ maxSize: 600 });
     }

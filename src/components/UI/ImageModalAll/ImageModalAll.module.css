@@ -21,7 +21,7 @@
   margin: auto;
   display: block;
   width: 100%;
-  max-width: 200px;
+  max-width: 400px;
   height: auto;
   border: 3px solid #000;
 }
@@ -32,13 +32,13 @@
   bottom: 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1680px) {
   .ImgInModal {
-    max-width: 450px;
+    max-width: 480px;
   }
 }
-@media (max-width: 1920px) and (min-width: 1441px) {
+@media (max-width: 1920px) and (min-width: 1681px) {
   .ImgInModal {
-    max-width: 515px;
+    max-width: 615px;
   }
 }

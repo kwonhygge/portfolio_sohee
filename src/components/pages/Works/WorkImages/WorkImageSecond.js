@@ -13,7 +13,7 @@ const WorkImageSecond = (props) => {
     } else if (window.innerWidth < 1920) {
       setMaxSize(480);
     } else {
-      setMaxSize(600);
+      setMaxSize(700);
     }
   };
 
