@@ -9,9 +9,11 @@ const WorkImageSecond = (props) => {
   const handleClick = () => {
     setShow(!show);
     if (window.innerWidth <= 1024) {
-      setMaxSize(450);
+      setMaxSize(420);
+    } else if (window.innerWidth <= 1440) {
+      setMaxSize(515);
     } else if (window.innerWidth < 1920) {
-      setMaxSize(480);
+      setMaxSize(600);
     } else {
       setMaxSize(700);
     }

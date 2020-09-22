@@ -16,12 +16,14 @@ class Poster extends Component {
       imgNum: 0,
       maxSize: 480,
     };
+  }
+  componentDidMount() {
     if (window.innerWidth <= 1024) {
-      this.setState({ maxSize: 480 });
-    } else if (window.innerWidth <= 1680) {
-      this.setState({ maxSize: 550 });
+      this.setState({ maxSize: 380 });
+    } else if (window.innerWidth <= 1600) {
+      this.setState({ maxSize: 580 });
     } else {
-      this.setState({ maxSize: 600 });
+      this.setState({ maxSize: 700 });
     }
   }
 
@@ -58,7 +60,7 @@ class Poster extends Component {
             <ImageModalEach
               itemIndx={ToyItems[1][2].index}
               itemName={ToyItems[1][2].name}
-              smallImgWidth={35}
+              smallImgWidth={40}
               imgSrc={Festival.src}
               imgAlt={Festival.alt}
               maxWidth={this.state.maxSize}
