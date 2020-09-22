@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import aniList from '../../../../assets/images/anicenter';
+import aniList from '../../../../assets/images/works/anicenter';
 import styles from './WorkImageFirst.module.css';
 import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

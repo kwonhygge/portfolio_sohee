@@ -7,8 +7,9 @@ import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
 import { WorksItems } from '../../../store/contents/portfolio/WorksItems';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ImageModalAll from '../../UI/ImageModalAll/ImageModalAll';
-import cuList from '../../../assets/images/curation';
-import aniList from '../../../assets/images/anicenter';
+import cuList from '../../../assets/images/works/curation';
+import aniList from '../../../assets/images/works/anicenter';
+import workList from '../../../assets/images/works/index';
 
 class Works extends Component {
   constructor() {
@@ -17,11 +18,27 @@ class Works extends Component {
       show: false,
       openState: {},
       maxSize: 380,
+      loading: true,
     };
+  }
+  renderSpinner() {
+    if (!this.state.loading) {
+      return null;
+    }
+    return <span className="spinner"></span>;
+  }
+
+  handleImageLoaded = () => {
+    this.setState({ loading: false });
+  };
+
+  handleImageErrored() {
+    this.setState({ loading: true });
   }
   componentDidMount = () => {
     scroll.scrollToTop();
   };
+
   handleOpen = (e) => {
     this.setState({ show: true, openState: { [e.target.id]: true } });
     if (e.target.id === '0') {
@@ -88,8 +105,9 @@ class Works extends Component {
         <div className={styles.Contents}>
           <Element name="work1">
             <WorkInfo item={WorksItems[0]} />
+            {this.renderSpinner()}
             <div onClick={this.handleOpen}>
-              <img />
+              <img src={workList[0].src} onLoad={this.handleImageLoaded} />
               <span id={0}>id1</span>
             </div>
             {openState[0] && (

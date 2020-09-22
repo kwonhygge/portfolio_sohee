@@ -6,8 +6,23 @@ class StackedImages extends Component {
   constructor(props) {
     super(props);
     this.imgLength = props.imgList.length;
+    this.state = {
+      loading: true,
+    };
   }
+  renderSpinner() {
+    if (!this.state.loading) {
+      return null;
+    }
+    return <span className={styles.Spinner}></span>;
+  }
+  handleImageLoaded = () => {
+    this.setState({ loading: false });
+  };
 
+  handleImageErrored() {
+    this.setState({ loading: true });
+  }
   render() {
     const { imgList, marginLeft, imgNum, nextClick } = this.props;
     const realIndex = imgNum % this.imgLength;
@@ -16,6 +31,7 @@ class StackedImages extends Component {
         <div className={styles.Container}>
           <div className={styles.Content}>
             <div className={styles.Images}>
+              {this.renderSpinner()}
               {imgList.map((item, index) => {
                 let zIndex = this.imgLength - index;
                 let indxNum = (imgNum + index) % this.imgLength;
@@ -31,7 +47,10 @@ class StackedImages extends Component {
                       marginLeft: index === 0 ? '' : `-${marginLeft}vw`,
                     }}
                   >
-                    <img src={imgList[indxNum].src} />
+                    <img
+                      onLoad={this.handleImageLoaded}
+                      src={imgList[indxNum].src}
+                    />
                   </div>
                 );
               })}
