@@ -49,14 +49,12 @@ class ImageModalAll extends Component {
           isMany={true}
         >
           <div className={styles.Gallery}>
-            <div styles={styles.Middle}>
-              <img
-                src={imgList ? imgList[imgNum].src : ''}
-                alt={imgList[imgNum].alt}
-                className={styles.ImgInModal}
-                style={{ maxWidth: `${maxSize}px` }}
-              />
-            </div>
+            <img
+              src={imgList ? imgList[imgNum].src : ''}
+              alt={imgList[imgNum].alt}
+              className={styles.ImgInModal}
+              style={{ maxWidth: `${maxSize}px` }}
+            />
           </div>
         </Modal>
       </>

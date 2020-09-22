@@ -6,18 +6,50 @@ import { Link, Element, animateScroll as scroll } from 'react-scroll';
 import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
 import { WorksItems } from '../../../store/contents/portfolio/WorksItems';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import WorkImageFirst from './WorkImages/WorkImageFirst';
-import WorkImageSecond from './WorkImages/WorkImageSecond';
+import ImageModalAll from '../../UI/ImageModalAll/ImageModalAll';
+import cuList from '../../../assets/images/curation';
+import aniList from '../../../assets/images/anicenter';
 
 class Works extends Component {
   constructor() {
     super();
+    this.state = {
+      show: false,
+      openState: {},
+      maxSize: 380,
+    };
   }
   componentDidMount = () => {
     scroll.scrollToTop();
   };
-
+  handleOpen = (e) => {
+    this.setState({ show: true, openState: { [e.target.id]: true } });
+    if (e.target.id === '0') {
+      if (window.innerWidth <= 1440) {
+        this.setState({ maxWidth: 380 });
+      } else if (window.innerWidth <= 1680) {
+        this.setState({ maxWidth: 450 });
+      } else {
+        this.setState({ maxWidth: 615 });
+      }
+    } else {
+      if (window.innerWidth <= 1024) {
+        this.setState({ maxWidth: 400 });
+      } else if (window.innerWidth <= 1440) {
+        this.setState({ maxWidth: 480 });
+      } else if (window.innerWidth < 1920) {
+        this.setState({ maxWidth: 600 });
+      } else {
+        this.setState({ maxWidth: 700 });
+      }
+    }
+  };
+  handleClose = () => {
+    this.setState({ show: false });
+  };
   render() {
+    const { openState, show, maxWidth } = this.state;
+
     return (
       <>
         <SideDrawer>
@@ -56,18 +88,37 @@ class Works extends Component {
         <div className={styles.Contents}>
           <Element name="work1">
             <WorkInfo item={WorksItems[0]} />
-
-            <WorkImageFirst
-              itemIndx={WorksItems[0].index}
-              itemName={WorksItems[0].name}
-            />
+            <div onClick={this.handleOpen}>
+              <img />
+              <span id={0}>id1</span>
+            </div>
+            {openState[0] && (
+              <ImageModalAll
+                imgList={aniList}
+                show={show}
+                maxSize={maxWidth}
+                modalClosed={this.handleClose}
+                itemIndx={WorksItems[0].index}
+                itemName={WorksItems[0].name}
+              />
+            )}
           </Element>
           <Element name="work2">
             <WorkInfo item={WorksItems[1]} />
-            <WorkImageSecond
-              itemIndx={WorksItems[1].index}
-              itemName={WorksItems[1].name}
-            />
+            <div onClick={this.handleOpen}>
+              <img />
+              <span id={1}>id2</span>
+            </div>
+            {openState[1] && (
+              <ImageModalAll
+                imgList={cuList}
+                show={show}
+                maxSize={maxWidth}
+                modalClosed={this.handleClose}
+                itemIndx={WorksItems[1].index}
+                itemName={WorksItems[1].name}
+              />
+            )}
           </Element>
         </div>
       </>

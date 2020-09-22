@@ -6,7 +6,6 @@ import bookStyles from './ToyInfo.module.css';
 const ToyInfo = (props) => {
   const { colorNum, length, item } = props;
   const indx = colorNum % length;
-  console.log(item.colors[indx]);
 
   return (
     <>
