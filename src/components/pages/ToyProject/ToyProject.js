@@ -5,7 +5,7 @@ import styles from './ToyProject.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Book from './Book/Book';
 import Poster from './Poster/Poster';
-import Illustration from './Illustration/Illustration';
+import Drawing from './Drawing/Drawing';
 import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
 class ToyProject extends Component {
   constructor(props) {
@@ -130,14 +130,14 @@ class ToyProject extends Component {
               onClick={this.handleClickType}
               className={type[2] && sideStyles.SelectedType}
             >
-              illustration
+              Drawing
             </span>
           </div>
         </SideDrawer>
         <div className={styles.Contents}>
           {type[0] && <Book />}
           {type[1] && <Poster />}
-          {type[2] && <Illustration />}
+          {type[2] && <Drawing />}
         </div>
       </>
     );
