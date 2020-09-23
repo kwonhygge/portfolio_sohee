@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './StackedImages.module.css';
 import AngleRight from '../../../assets/icons/AngleRight';
 import LoadElement from '../../UI/LoadElement/LoadElement';
+import ImageModalAll from '../ImageModalAll/ImageModalAll';
 
 class StackedImages extends Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class StackedImages extends Component {
     this.imgLength = props.imgList.length;
     this.state = {
       loading: true,
+      show: false,
     };
   }
   renderLoader() {
@@ -24,13 +26,37 @@ class StackedImages extends Component {
   handleImageErrored() {
     this.setState({ loading: true });
   }
+  handleOpen = () => {
+    this.setState({ show: true });
+  };
+
+  handleClose = () => {
+    this.setState({ show: false });
+  };
   render() {
-    const { imgList, marginLeft, imgNum, nextClick } = this.props;
+    const {
+      imgList,
+      marginLeft,
+      imgNum,
+      nextClick,
+      itemName,
+      itemIndx,
+    } = this.props;
+    const { show } = this.state;
     const realIndex = imgNum % this.imgLength;
     return (
       <>
         <div className={styles.Container}>
-          <div className={styles.Content}>
+          {show && (
+            <ImageModalAll
+              imgList={imgList}
+              show={show}
+              modalClosed={this.handleClose}
+              itemIndx={itemIndx}
+              itemName={itemName}
+            />
+          )}
+          <div className={styles.Content} onClick={this.handleOpen}>
             <div className={styles.Images}>
               {this.renderLoader()}
               {imgList.map((item, index) => {

@@ -45,6 +45,8 @@ class Poster extends Component {
             nextClick={this.increaseNumber}
             marginLeft={22}
             imgNum={imgNum}
+            itemIndx={ToyItems[1][0].index}
+            itemName={ToyItems[1][0].name}
           />
         </Element>
         <Element name="poster2">
@@ -54,6 +56,8 @@ class Poster extends Component {
             nextClick={this.increaseNumber}
             marginLeft={19}
             imgNum={imgNum}
+            itemIndx={ToyItems[1][1].index}
+            itemName={ToyItems[1][1].name}
           />
         </Element>
         <Element name="poster3">

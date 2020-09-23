@@ -11,6 +11,7 @@
   align-items: center;
   width: 30vw;
   margin-bottom: 0.72vw;
+  cursor: pointer;
 }
 .Image {
   border: 2px solid #f2f2f2;
