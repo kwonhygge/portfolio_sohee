@@ -5,25 +5,21 @@
 }
 
 .ImageContainer {
-  display: flex;
-  width: 47.5vw;
-  height: 27.34vw;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
+  margin-bottom: 6vw;
+  cursor: pointer;
 }
-.Row {
-  display: flex;
-  flex-wrap: wrap;
+.ImageContainer:hover img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 10px 0.21px #ffffff,
+    inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
-.Col {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+.ImageContainer span {
+  position: absolute;
+  top: -25px;
+  right: 10px;
 }
-.Row img {
-  width: 100%;
-}
-.Col img {
-  vertical-align: middle;
+
+.ImageContainer img {
   width: 100%;
 }

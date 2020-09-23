@@ -10,6 +10,7 @@ import ImageModalAll from '../../UI/ImageModalAll/ImageModalAll';
 import cuList from '../../../assets/images/works/curation';
 import aniList from '../../../assets/images/works/anicenter';
 import workList from '../../../assets/images/works/index';
+import LoadElement from '../../UI/LoadElement/LoadElement';
 
 class Works extends Component {
   constructor() {
@@ -21,11 +22,11 @@ class Works extends Component {
       loading: true,
     };
   }
-  renderSpinner() {
+  renderLoader() {
     if (!this.state.loading) {
       return null;
     }
-    return <span className="spinner"></span>;
+    return <LoadElement />;
   }
 
   handleImageLoaded = () => {
@@ -105,10 +106,18 @@ class Works extends Component {
         <div className={styles.Contents}>
           <Element name="work1">
             <WorkInfo item={WorksItems[0]} />
-            {this.renderSpinner()}
-            <div onClick={this.handleOpen}>
-              <img src={workList[0].src} onLoad={this.handleImageLoaded} />
-              <span id={0}>id1</span>
+            {this.renderLoader()}
+            <div
+              id={0}
+              className={styles.ImageContainer}
+              onClick={this.handleOpen}
+            >
+              <img
+                id={0}
+                src={workList[0].src}
+                onLoad={this.handleImageLoaded}
+              />
+              <span id={0}>더보기</span>
             </div>
             {openState[0] && (
               <ImageModalAll
@@ -123,9 +132,17 @@ class Works extends Component {
           </Element>
           <Element name="work2">
             <WorkInfo item={WorksItems[1]} />
-            <div onClick={this.handleOpen}>
-              <img />
-              <span id={1}>id2</span>
+            <div
+              id={1}
+              className={styles.ImageContainer}
+              onClick={this.handleOpen}
+            >
+              <img
+                id={1}
+                src={workList[1].src}
+                onLoad={this.handleImageLoaded}
+              />
+              <span id={1}>더보기</span>
             </div>
             {openState[1] && (
               <ImageModalAll

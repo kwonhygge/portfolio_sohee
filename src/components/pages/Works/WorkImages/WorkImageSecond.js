@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './WorkImageSecond.module.css';
-import cuList from '../../../../assets/images/curation';
+import cuList from '../../../../assets/images/works/curation';
 import ImageModalAll from '../../../UI/ImageModalAll/ImageModalAll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const WorkImageSecond = (props) => {

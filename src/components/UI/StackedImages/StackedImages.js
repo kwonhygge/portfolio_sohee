@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './StackedImages.module.css';
 import AngleRight from '../../../assets/icons/AngleRight';
+import LoadElement from '../../UI/LoadElement/LoadElement';
 
 class StackedImages extends Component {
   constructor(props) {
@@ -10,11 +11,11 @@ class StackedImages extends Component {
       loading: true,
     };
   }
-  renderSpinner() {
+  renderLoader() {
     if (!this.state.loading) {
       return null;
     }
-    return <span className={styles.Spinner}></span>;
+    return <LoadElement />;
   }
   handleImageLoaded = () => {
     this.setState({ loading: false });
@@ -31,7 +32,7 @@ class StackedImages extends Component {
         <div className={styles.Container}>
           <div className={styles.Content}>
             <div className={styles.Images}>
-              {this.renderSpinner()}
+              {this.renderLoader()}
               {imgList.map((item, index) => {
                 let zIndex = this.imgLength - index;
                 let indxNum = (imgNum + index) % this.imgLength;
