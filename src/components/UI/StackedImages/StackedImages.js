@@ -11,6 +11,7 @@ class StackedImages extends Component {
     this.state = {
       loading: true,
       show: false,
+      maxSize: 400,
     };
   }
   renderLoader() {
@@ -28,6 +29,16 @@ class StackedImages extends Component {
   }
   handleOpen = () => {
     this.setState({ show: true });
+    if (window.innerWidth < 1366) {
+      console.log('Here?');
+      this.setState({ maxSize: 400 });
+    } else if (window.innerWidth >= 1366 && window.innerWidth < 1440) {
+      this.setState({ maxSize: 500 });
+    } else if (window.innerWidth >= 1440 && window.innerWidth < 1680) {
+      this.setState({ maxSize: 600 });
+    } else {
+      this.setState({ maxSize: 700 });
+    }
   };
 
   handleClose = () => {
@@ -42,7 +53,7 @@ class StackedImages extends Component {
       itemName,
       itemIndx,
     } = this.props;
-    const { show } = this.state;
+    const { show, maxSize } = this.state;
     const realIndex = imgNum % this.imgLength;
     return (
       <>
@@ -54,6 +65,7 @@ class StackedImages extends Component {
               modalClosed={this.handleClose}
               itemIndx={itemIndx}
               itemName={itemName}
+              maxSize={maxSize}
             />
           )}
           <div className={styles.Content} onClick={this.handleOpen}>
