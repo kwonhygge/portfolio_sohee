@@ -119,7 +119,7 @@ class Drawing extends Component {
                 <img
                   className={styles.ImgInModal}
                   style={{
-                    width: imgNum === '3' ? '23%' : '',
+                    width: imgNum === 3 ? '23%' : '',
                   }}
                   src={drawingList[imgNum].src}
                   alt={drawingList[imgNum].alt}
