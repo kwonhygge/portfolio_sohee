@@ -1,96 +1,136 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react';
 import styles from './Drawing.module.css';
 import drawingList from '../../../../assets/images/drawing';
 import Modal from '../../../UI/Modal/Modal';
+import LoadElement from '../../../UI/LoadElement/LoadElement';
 
-const Drawing = () => {
-  const [show, setShow] = useState(false);
-  const [imgNum, setImgNum] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const imgLength = drawingList.length;
+class Drawing extends Component {
+  constructor() {
+    super();
+    this.state = {
+      show: false,
+      imgNum: 0,
+      loading: true,
+    };
+    this.imgLength = drawingList.length;
+  }
+  increaseNumber = () => {
+    this.setState((prevState) => ({
+      imgNum: (prevState.imgNum + 1) % this.imgLength,
+    }));
+  };
+  decreaseNumber = () => {
+    if (this.state.imgNum === 0) {
+      return;
+    }
+    this.setState((prevState) => ({
+      imgNum: prevState.imgNum - 1,
+    }));
+  };
+  modalClosed = () => {
+    this.setState({ show: false });
+  };
+  modalOpen = (e) => {
+    this.setState({
+      imgNum: Number(e.target.id),
+      show: true,
+    });
+  };
+  renderLoader() {
+    if (!this.state.loading) {
+      return null;
+    }
+    return <LoadElement />;
+  }
+  handleImageLoaded = () => {
+    this.setState({ loading: false });
+  };
 
-  const modalClosed = () => {
-    setShow(false);
-  };
-  const modalOpen = (e) => {
-    setImgNum(e.target.id);
-    setShow(true);
-  };
-  return (
-    <>
-      <div className={styles.Header}>
-        <h1>Drawing</h1>
-        <div>
-          <span>사용 프로그램</span>
-          <span>illustrator, clipstudio</span>
-        </div>
-      </div>
-      <div className={styles.Gallery}>
-        <div className={styles.Row}>
-          <div className={styles.Col}>
-            <img
-              id={0}
-              onClick={modalOpen}
-              src={drawingList[0].src}
-              alt={drawingList[0].alt}
-            />
-            <img
-              id={1}
-              onClick={modalOpen}
-              src={drawingList[1].src}
-              alt={drawingList[1].alt}
-            />
-            <img
-              id={2}
-              onClick={modalOpen}
-              src={drawingList[2].src}
-              alt={drawingList[2].alt}
-            />
-          </div>
-          <div className={styles.Col}>
-            <img
-              id={3}
-              onClick={modalOpen}
-              src={drawingList[3].src}
-              alt={drawingList[3].alt}
-            />
-            <img
-              id={4}
-              onClick={modalOpen}
-              src={drawingList[4].src}
-              alt={drawingList[4].alt}
-            />
-            <img
-              id={5}
-              onClick={modalOpen}
-              src={drawingList[5].src}
-              alt={drawingList[5].alt}
-            />
+  render() {
+    const { imgNum, show } = this.state;
+
+    return (
+      <>
+        <div className={styles.Header}>
+          <h1>Drawing</h1>
+          <div>
+            <span>사용 프로그램</span>
+            <span>illustrator, clipstudio</span>
           </div>
         </div>
-        {show && (
-          <Modal
-            show={show}
-            modalClosed={modalClosed}
-            isMany={true}
-            imgLength={imgLength}
-            imgNum={imgNum + 1}
-            index="Drawing"
-            name={drawingList[imgNum].name}
-            isMany={true}
-          >
-            <div className={styles.ImgContainer}>
+        <div className={styles.Gallery}>
+          <div className={styles.Row}>
+            {this.renderLoader()}
+            <div className={styles.Col}>
               <img
-                className={styles.ImgInModal}
-                src={drawingList[imgNum].src}
-                alt={drawingList[imgNum].alt}
+                id={0}
+                onClick={this.modalOpen}
+                src={drawingList[0].src}
+                alt={drawingList[0].alt}
+              />
+              <img
+                id={2}
+                onClick={this.modalOpen}
+                onLoad={this.handleImageLoaded}
+                src={drawingList[2].src}
+                alt={drawingList[2].alt}
+              />
+              <img
+                id={4}
+                onClick={this.modalOpen}
+                src={drawingList[4].src}
+                alt={drawingList[4].alt}
               />
             </div>
-          </Modal>
-        )}
-      </div>
-    </>
-  );
-};
+            <div className={styles.Col}>
+              <img
+                id={1}
+                onClick={this.modalOpen}
+                src={drawingList[1].src}
+                alt={drawingList[1].alt}
+              />
+              <img
+                id={3}
+                onClick={this.modalOpen}
+                src={drawingList[6].src}
+                alt={drawingList[6].alt}
+              />
+              <img
+                id={5}
+                onClick={this.modalOpen}
+                src={drawingList[5].src}
+                alt={drawingList[5].alt}
+              />
+            </div>
+          </div>
+          {show && (
+            <Modal
+              show={show}
+              modalClosed={this.modalClosed}
+              nextArrow={this.increaseNumber}
+              prevArrow={this.decreaseNumber}
+              imgLength={this.imgLength}
+              imgNum={imgNum + 1}
+              index="Drawing"
+              name={drawingList[imgNum].name}
+              isMany={true}
+            >
+              <div className={styles.ImgContainer}>
+                <img
+                  className={styles.ImgInModal}
+                  style={{
+                    width: imgNum === '3' ? '23%' : '',
+                  }}
+                  src={drawingList[imgNum].src}
+                  alt={drawingList[imgNum].alt}
+                />
+              </div>
+            </Modal>
+          )}
+        </div>
+      </>
+    );
+  }
+}
 
 export default Drawing;
