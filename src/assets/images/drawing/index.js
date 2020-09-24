@@ -6,10 +6,10 @@ import Draw5 from './5.png';
 import Draw6 from './6.jpg';
 
 export default [
-  { src: Draw1, alt: 'Draw1' },
-  { src: Draw2, alt: 'Draw2' },
-  { src: Draw3, alt: 'Draw3' },
-  { src: Draw4, alt: 'Draw4' },
-  { src: Draw5, alt: 'Draw5' },
-  { src: Draw6, alt: 'Draw6' },
+  { src: Draw1, alt: 'Draw1', name: 'Dionysos' },
+  { src: Draw2, alt: 'Draw2', name: 'Rapunzel' },
+  { src: Draw3, alt: 'Draw3', name: 'Venus' },
+  { src: Draw4, alt: 'Draw4', name: 'Narcissus' },
+  { src: Draw5, alt: 'Draw5', name: 'Romeo&Juliet' },
+  { src: Draw6, alt: 'Draw6', name: 'Tinker bell' },
 ];

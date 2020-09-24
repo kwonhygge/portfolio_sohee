@@ -55,6 +55,18 @@
   border: 0.5px solid rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
+.ImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: auto;
+}
+.ImgInModal {
+  width: 50%;
+  max-width: 800px;
+}
+
 @media screen and (max-width: 600px) {
   .Row {
     -ms-flex-wrap: wrap;

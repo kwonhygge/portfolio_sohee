@@ -25,7 +25,7 @@ class ImageModalAll extends Component {
   };
 
   render() {
-    const { imgNum } = this.state;
+    let { imgNum } = this.state;
     const {
       itemIndx,
       itemName,
