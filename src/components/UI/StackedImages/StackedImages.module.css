@@ -20,7 +20,9 @@
     0px 4px 4px rgba(0, 0, 0, 0.25);
   transform-origin: center left;
 }
-
+.Images:hover {
+  opacity: 0.8;
+}
 .Image img {
   width: 100%;
 }
