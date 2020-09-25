@@ -50,7 +50,7 @@
 
 .Info > div span:nth-child(1) {
   display: inline-block;
-  width: 4.32vw;
+  width: 5vw;
   font-weight: 700;
   color: #828282;
   margin-right: 50px;
@@ -79,8 +79,7 @@
   bottom: 0;
   right: -20px;
 }
-.MsgFooter > div:nth-child(1) {
-}
+
 .MsgFooter h2 {
   font-family: 'Nanum Myeongjo', serif;
   font-size: 0.9vw;

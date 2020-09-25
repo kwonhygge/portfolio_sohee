@@ -1,5 +1,6 @@
 .CopyItem {
   width: 17.6vw;
+  min-width: 220px;
   text-decoration: none;
   border: 2px solid #626e94;
   box-sizing: border-box;
@@ -42,13 +43,7 @@
 }
 /* tablet */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .CopyItem {
-    display: none;
-  }
-}
-/* mobile */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .CopyItem {
     display: none;
   }
