@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 import Modal from '../Modal/Modal';
 import styles from './ImageModalAll.module.css';
+import LoadElement from '../LoadElement/LoadElement';
 
 class ImageModalAll extends Component {
   constructor(props) {
     super(props);
     this.state = {
       imgNum: 0,
+      loading: true,
     };
     this.imgLength = props.imgList.length;
+  }
+  renderLoader() {
+    if (!this.state.loading) {
+      return null;
+    }
+    return <LoadElement />;
   }
   increaseNumber = () => {
     this.setState((prevState) => ({
       imgNum: (prevState.imgNum + 1) % this.imgLength,
     }));
+  };
+  handleImageLoaded = () => {
+    this.setState({ loading: false });
   };
   decreaseNumber = () => {
     if (this.state.imgNum === 0) {
@@ -49,7 +60,9 @@ class ImageModalAll extends Component {
           isMany={true}
         >
           <div className={styles.Gallery}>
+            {this.renderLoader()}
             <img
+              onLoad={this.handleImageLoaded}
               src={imgList ? imgList[imgNum].src : ''}
               alt={imgList[imgNum].alt}
               className={styles.ImgInModal}

@@ -3,7 +3,7 @@ import WorkInfo from './WorkInfo/WorkInfo';
 import styles from './Works.module.css';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import { Link, Element, animateScroll as scroll } from 'react-scroll';
-import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
+import sideStyles from '../../../containers/SideStyle.module.css';
 import { WorksItems } from '../../../store/contents/portfolio/WorksItems';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ImageModalAll from '../../UI/ImageModalAll/ImageModalAll';

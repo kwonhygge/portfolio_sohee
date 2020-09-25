@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Book from './Book/Book';
 import Poster from './Poster/Poster';
 import Drawing from './Drawing/Drawing';
-import sideStyles from '../../../containers/Portfolio/SideStyle.module.css';
+import sideStyles from '../../../containers/SideStyle.module.css';
 class ToyProject extends Component {
   constructor(props) {
     super(props);
