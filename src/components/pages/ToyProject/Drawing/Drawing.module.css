@@ -31,6 +31,9 @@
   font-size: 1.19vw;
   font-weight: 500;
 }
+.Gallery {
+  margin-bottom: 8.02vw;
+}
 
 .Row {
   display: -ms-flexbox;

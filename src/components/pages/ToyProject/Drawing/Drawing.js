@@ -11,8 +11,9 @@ class Drawing extends Component {
       show: false,
       imgNum: 0,
       loading: true,
+      width: '23%',
     };
-    this.imgLength = drawingList.length;
+    this.imgLength = drawingList.length - 1;
   }
   increaseNumber = () => {
     this.setState((prevState) => ({
@@ -35,6 +36,19 @@ class Drawing extends Component {
       imgNum: Number(e.target.id),
       show: true,
     });
+    if (window.innerWidth <= 1024) {
+      this.setState({
+        width: '38%',
+      });
+    } else if (window.innerWidth > 1024 && window.innerWidth <= 1366) {
+      this.setState({
+        width: '27%',
+      });
+    } else if (window.innerWidth > 1366) {
+      this.setState({
+        width: '30%',
+      });
+    }
   };
   renderLoader() {
     if (!this.state.loading) {
@@ -47,7 +61,7 @@ class Drawing extends Component {
   };
 
   render() {
-    const { imgNum, show } = this.state;
+    const { imgNum, show, width } = this.state;
 
     return (
       <>
@@ -116,10 +130,12 @@ class Drawing extends Component {
               isMany={true}
             >
               <div className={styles.ImgContainer}>
+                {this.renderLoader()}
                 <img
+                  onLoad={this.handleImageLoaded}
                   className={styles.ImgInModal}
                   style={{
-                    width: imgNum === 3 ? '23%' : '',
+                    width: imgNum === 3 ? width : '',
                   }}
                   src={drawingList[imgNum].src}
                   alt={drawingList[imgNum].alt}

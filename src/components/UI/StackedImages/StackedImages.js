@@ -30,7 +30,6 @@ class StackedImages extends Component {
   handleOpen = () => {
     this.setState({ show: true });
     if (window.innerWidth < 1366) {
-      console.log('Here?');
       this.setState({ maxSize: 400 });
     } else if (window.innerWidth >= 1366 && window.innerWidth < 1440) {
       this.setState({ maxSize: 500 });
