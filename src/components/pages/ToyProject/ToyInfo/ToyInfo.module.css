@@ -3,3 +3,47 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
+.StroyBtn {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+}
+.StroyBtn input[type='checkbox'] {
+  display: none;
+}
+.StroyBtn label {
+  width: 6.04vw;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), -4px -4px 10px 0.21px #ffffff,
+    inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.87vw;
+}
+.StroyBtn input[type='checkbox'] + label span {
+  display: inline-block;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #5c668a;
+  font-weight: 700;
+  font-size: 0.88vw;
+}
+.StroyBtn input[type='checkbox'] + label:hover span {
+  cursor: pointer;
+}
+.StroyBtn input[type='checkbox']:checked + label {
+  box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.Story {
+  position: absolute;
+  top: 0;
+  right: -19vw;
+  text-align: start;
+}
+.Story h3 {
+  font-size: 0.93vw;
+  font-weight: 500;
+  line-height: 1.45vw;
+}

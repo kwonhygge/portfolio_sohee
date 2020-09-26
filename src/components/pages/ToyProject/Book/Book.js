@@ -15,6 +15,7 @@ class Book extends Component {
       loading: true,
     };
   }
+
   renderLoader() {
     if (!this.state.loading) {
       return null;
@@ -52,7 +53,7 @@ class Book extends Component {
           </div>
         </Element>
         <Element name="book3">
-          <ToyInfo item={ToyItems[0][2]} />
+          <ToyInfo item={ToyItems[0][2]} isStory={true} />
           <div className={styles.Img}>
             <ImageModalEach
               itemIndx={ToyItems[0][2].index}

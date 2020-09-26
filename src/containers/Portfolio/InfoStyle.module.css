@@ -1,9 +1,9 @@
 .Container {
   margin-bottom: 2.76vw;
-  position: relative;
 }
 
 .Header {
+  position: relative;
   text-align: center;
 }
 .Header h1 {
@@ -48,4 +48,8 @@
 .Content h2 {
   display: inline-block;
   font-size: 0.78vw;
+}
+
+.Header > div {
+  position: relative;
 }
