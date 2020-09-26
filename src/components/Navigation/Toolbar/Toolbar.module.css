@@ -66,11 +66,12 @@
   justify-content: center;
   align-items: center;
 }
-.HomeLogo svg {
-  max-width: 25px;
-}
 
-/* tablet */
+@media (max-width: 1024px) {
+  .NavItem {
+    padding: 40px 45px 40px 0;
+  }
+}
 
 /* mobile */
 @media (max-width: 768px) {

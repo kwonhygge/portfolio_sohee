@@ -14,10 +14,14 @@
     inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
-.ImageContainer span {
+.More {
   position: absolute;
-  top: -25px;
+  top: -17px;
   right: 10px;
+  font-size: 0.67vw;
+  font-weight: 600;
+  color: #828282;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .ImageContainer img {

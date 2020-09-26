@@ -117,7 +117,10 @@ class Works extends Component {
                 src={workList[0].src}
                 onLoad={this.handleImageLoaded}
               />
-              <span id={0}>더보기</span>
+              <div className={styles.More}>
+                <span id={0}>더보기&nbsp;&nbsp;</span>
+                <FontAwesomeIcon icon="caret-down" size="1x" />
+              </div>
             </div>
             {openState[0] && (
               <ImageModalAll
@@ -142,7 +145,10 @@ class Works extends Component {
                 src={workList[1].src}
                 onLoad={this.handleImageLoaded}
               />
-              <span id={1}>더보기</span>
+              <div className={styles.More}>
+                <span id={1}>더보기&nbsp;&nbsp;</span>
+                <FontAwesomeIcon icon="caret-down" size="1x" />
+              </div>
             </div>
             {openState[1] && (
               <ImageModalAll
