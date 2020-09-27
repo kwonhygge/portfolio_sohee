@@ -1,11 +1,13 @@
 .Container {
   width: 100%;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   margin-bottom: 5.57vw;
 }
 
 .Images {
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +17,15 @@
 }
 .Image {
   border: 2px solid #f2f2f2;
+  -webkit-box-shadow: -4px -4px 10px 0.21px #ffffff,
+    inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: -4px -4px 10px 0.21px #ffffff,
     inset 4px 4px 10px 0.21px rgba(255, 255, 255, 0.2),
     0px 4px 4px rgba(0, 0, 0, 0.25);
+  -ms-transform-origin: center left;
+  -webkit-transform-origin: center left;
+  -moz-transform-origin: center left;
   transform-origin: center left;
 }
 .Images:hover {
@@ -40,6 +48,7 @@
 
 .Next {
   display: flex;
+  display: -ms-flexbox;
   align-items: center;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 400;

@@ -2,9 +2,13 @@
   position: absolute;
   top: 80px;
   left: -1vw;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   width: 85%;
+  -webkit-box-shadow: -7px -7px 10px 0.5px rgba(255, 255, 255, 0.6),
+    7px 7px 10px 0.5px rgba(5, 0, 0, 0.3),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.3);
   box-shadow: -7px -7px 10px 0.5px rgba(255, 255, 255, 0.6),
     7px 7px 10px 0.5px rgba(5, 0, 0, 0.3),
     inset 0px 0px 4px rgba(255, 255, 255, 0.3);
@@ -25,6 +29,8 @@
   margin-bottom: 10px;
 }
 .Dropdown li:hover {
+  -webkit-box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.2);
   box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.3),
     inset 4px 4px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;

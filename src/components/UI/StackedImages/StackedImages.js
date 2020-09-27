@@ -81,6 +81,8 @@ class StackedImages extends Component {
                     className={styles.Image}
                     style={{
                       zIndex: `${zIndex}`,
+                      WebkitTransform: `scale(${scaleNum})`,
+                      msTransform: `scale(${scaleNum})`,
                       transform: `scale(${scaleNum})`,
                       marginLeft: index === 0 ? '' : `-${marginLeft}vw`,
                     }}

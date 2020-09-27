@@ -10,6 +10,9 @@
   width: 75%;
   z-index: 500;
   transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
 }
 .Info {
   position: fixed;
@@ -17,14 +20,19 @@
   top: 5%;
   height: 60%;
   z-index: 500;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
 .Info span {
+  -moz-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
   transform-origin: 0 0;
   font-size: 1.97vw;
   font-weight: 600;
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 .Info span:nth-child(2) {
@@ -47,12 +55,16 @@
   right: 5%;
 }
 .PicNum span {
+  -ms-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   font-size: 1.71vw;
   margin-bottom: 4.89vw;
 }
 .Btns {
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   align-items: center;
