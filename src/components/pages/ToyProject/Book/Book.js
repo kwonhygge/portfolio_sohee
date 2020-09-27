@@ -7,12 +7,14 @@ import coverEachList from '../../../../assets/images/bookCover';
 import styles from './Book.module.css';
 import harryList from '../../../../assets/images/harryPotter';
 import LoadElement from '../../../UI/LoadElement/LoadElement';
+import Modal from '../../../UI/Modal/Modal';
 
 class Book extends Component {
   constructor() {
     super();
     this.state = {
       loading: true,
+      show: false,
     };
   }
 
@@ -25,19 +27,41 @@ class Book extends Component {
   handleImageLoaded = () => {
     this.setState({ loading: false });
   };
+  handleClick = () => {
+    this.setState({ show: true });
+  };
+  handleModalClose = () => {
+    this.setState({ show: false });
+  };
 
   render() {
+    const { show } = this.state;
     return (
       <>
         <Element name="book1">
           <ToyInfo item={ToyItems[0][0]} />
           {this.renderLoader()}
           <div className={styles.Img}>
+            <div className={styles.More}>
+              <span>펼쳐보기</span>
+            </div>
             <img
+              onClick={this.handleClick}
               onLoad={this.handleImageLoaded}
               className={styles.ImgInModal}
               src={harryList[0].src}
             />
+            {show && (
+              <Modal
+                show={show}
+                modalClosed={this.handleModalClose}
+                harry={true}
+              >
+                <div className={styles.ModalImgContainer}>
+                  <img className={styles.ImgInModal} src={harryList[1].src} />
+                </div>
+              </Modal>
+            )}
           </div>
         </Element>
         <Element name="book2">
@@ -58,7 +82,6 @@ class Book extends Component {
             <ImageModalEach
               itemIndx={ToyItems[0][2].index}
               itemName={ToyItems[0][2].name}
-              style={{ width: '500px' }}
               imgSrc={coverEachList[1].src}
               imgAlt={coverEachList[1].alt}
             />

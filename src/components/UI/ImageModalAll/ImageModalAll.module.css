@@ -13,12 +13,9 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  overflow-y: auto;
 }
 
-.Middle {
-  width: 100%;
-  padding: 0 auto;
-}
 .ImgInModal {
   margin: auto;
   display: block;

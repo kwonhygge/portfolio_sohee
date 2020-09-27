@@ -66,7 +66,7 @@ class Poster extends Component {
             <ImageModalEach
               itemIndx={ToyItems[1][2].index}
               itemName={ToyItems[1][2].name}
-              smallImgWidth={40}
+              smallImgWidth={50}
               imgSrc={Festival.src}
               imgAlt={Festival.alt}
               maxWidth={this.state.maxSize}

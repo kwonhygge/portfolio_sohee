@@ -2,7 +2,19 @@
   width: 100%;
   margin-top: 4.37vw;
   margin-bottom: 6vw;
+  cursor: pointer;
+  position: relative;
 }
+.More {
+  position: absolute;
+  top: -17px;
+  right: 10px;
+  font-size: 0.67vw;
+  font-weight: 600;
+  color: #828282;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .ImgInModal {
   width: 100%;
 }

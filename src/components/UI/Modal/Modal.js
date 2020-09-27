@@ -12,6 +12,7 @@ const Modal = (props) => {
           style={{
             transform: props.show ? 'translate(-50%, -50%)' : 'scale(0)',
             opacity: props.show ? '1' : '0',
+            width: props.harry ? `100%` : '',
           }}
         >
           {props.children}

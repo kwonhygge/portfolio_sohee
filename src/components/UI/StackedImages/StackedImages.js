@@ -31,9 +31,9 @@ class StackedImages extends Component {
     this.setState({ show: true });
     if (window.innerWidth < 1366) {
       this.setState({ maxSize: 400 });
-    } else if (window.innerWidth >= 1366 && window.innerWidth < 1440) {
-      this.setState({ maxSize: 500 });
-    } else if (window.innerWidth >= 1440 && window.innerWidth < 1680) {
+    } else if (window.innerWidth >= 1366 && window.innerWidth <= 1440) {
+      this.setState({ maxSize: 450 });
+    } else if (window.innerWidth > 1440 && window.innerWidth < 1680) {
       this.setState({ maxSize: 600 });
     } else {
       this.setState({ maxSize: 700 });
