@@ -45,7 +45,7 @@ class Works extends Component {
     if (e.target.id === '0') {
       if (window.innerWidth <= 1440) {
         this.setState({ maxWidth: 380 });
-      } else if (window.innerWidth <= 1680) {
+      } else if (window.innerWidth > 1440 && window.innerWidth <= 1680) {
         this.setState({ maxWidth: 450 });
       } else {
         this.setState({ maxWidth: 615 });
@@ -53,9 +53,9 @@ class Works extends Component {
     } else {
       if (window.innerWidth <= 1024) {
         this.setState({ maxWidth: 400 });
-      } else if (window.innerWidth <= 1440) {
+      } else if (window.innerWidth > 1024 && window.innerWidth <= 1440) {
         this.setState({ maxWidth: 480 });
-      } else if (window.innerWidth < 1920) {
+      } else if (window.innerWidth > 1440 && window.innerWidth < 1920) {
         this.setState({ maxWidth: 600 });
       } else {
         this.setState({ maxWidth: 700 });

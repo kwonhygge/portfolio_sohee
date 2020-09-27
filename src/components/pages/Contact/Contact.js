@@ -20,15 +20,15 @@ const Contact = () => {
   return (
     <>
       <div className={styles.Contact}>
+        {renderLoader}
         <div className={styles.Header}>
           <h1>Contact</h1>
-          {renderLoader}
           <div className={styles.Bubble}>
-            <img src={WorkMsg} alt="WorkMessage" />
+            <img src={WorkMsg} alt="WorkMessage" onLoad={handleImageLoaded} />
           </div>
         </div>
         <div className={styles.Card}>
-          <img src={Card} alt="contact-card" onLoad={handleImageLoaded} />
+          <img src={Card} alt="contact-card" />
         </div>
       </div>
     </>

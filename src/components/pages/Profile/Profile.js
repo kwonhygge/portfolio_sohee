@@ -3,7 +3,7 @@ import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import styles from './Profile.module.css';
 import sideStyles from '../../../containers/SideStyle.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import amelie from '../../../assets/images/poster/amelie/1.jpg';
+import profileImg from '../../../assets/images/profile.png';
 const Profile = () => (
   <>
     <SideDrawer>
@@ -19,7 +19,7 @@ const Profile = () => (
     </SideDrawer>
     <div className={styles.Contents}>
       <div className={styles.ImgContainer}>
-        <img src={amelie} />
+        <img src={profileImg} />
       </div>
       <div className={styles.Profile}>
         <div className={styles.Header}>
