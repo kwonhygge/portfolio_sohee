@@ -34,7 +34,7 @@ const Modal = (props) => {
             transform: props.show ? 'scale(1)' : 'scale(0)',
             opacity: props.show ? '1' : '0',
           }}
-          width="26"
+          width="1.35vw"
           viewBox="0 0 30 32"
           fill="none"
         >
@@ -71,8 +71,7 @@ const Modal = (props) => {
             >
               <svg
                 onClick={props.nextArrow}
-                width="16"
-                height="31"
+                width="0.8vw"
                 fill="none"
                 viewBox="0 0 21 31"
               >
@@ -80,8 +79,7 @@ const Modal = (props) => {
               </svg>
               <svg
                 onClick={props.prevArrow}
-                width="16"
-                height="31"
+                width="0.8vw"
                 viewBox="0 0 21 31"
                 fill="none"
               >

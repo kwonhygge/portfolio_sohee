@@ -13,7 +13,7 @@ class Drawing extends Component {
       loading: true,
       width: '23%',
     };
-    this.imgLength = drawingList.length - 1;
+    this.imgLength = drawingList.length - 2;
   }
 
   increaseNumber = () => {

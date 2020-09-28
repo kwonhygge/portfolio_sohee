@@ -51,9 +51,9 @@ class Main extends Component {
               <span>F</span>
               <span>O</span>
               <span>L</span>
-              <span>I</span>
-              <span>O</span>
-              <span>.</span>
+              <span className={styles.I}>I</span>
+              <span className={styles.O}>O</span>
+              <span className={styles.Dot}>.</span>
             </div>
           </div>
         )}
