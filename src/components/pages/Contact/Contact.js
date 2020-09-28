@@ -30,12 +30,16 @@ class Contact extends Component {
           <div className={styles.Header}>
             <h1>Contact</h1>
             <div className={styles.Bubble}>
-              {this.renderLoader}
               <img src={WorkMsg} alt="WorkMessage" />
             </div>
           </div>
           <div className={styles.Card}>
-            <img src={Card} alt="contact-card" />
+            {this.renderLoader}
+            <img
+              src={Card}
+              alt="contact-card"
+              onLoad={this.handleImageLoaded}
+            />
           </div>
         </div>
       </>
