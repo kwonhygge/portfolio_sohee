@@ -121,8 +121,8 @@ class Drawing extends Component {
                 <img
                   id={1}
                   onClick={this.modalOpen}
-                  src={drawingList[1].src}
-                  alt={drawingList[1].alt}
+                  src={drawingList[7].src}
+                  alt={drawingList[7].alt}
                 />
                 <h2 id={1} onClick={this.modalOpen}>
                   Narcissus
