@@ -48,18 +48,7 @@
   right: -3.8vw;
   font-size: 0.76vw;
 }
-.Msg {
-  position: absolute;
-  top: -1.4vw;
-  color: #000;
-  right: 0.8vw;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 0.6vw;
-  font-weight: 500;
-}
-.Msg > strong {
-  color: #a63737;
-}
+
 /* tablet */
 
 @media (max-width: 1023px) {

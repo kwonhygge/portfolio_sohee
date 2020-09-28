@@ -1,3 +1,16 @@
+.Msg {
+  position: absolute;
+  top: 15%;
+  color: #000;
+  left: 13%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 0.6vw;
+  font-weight: 500;
+}
+.Msg > strong {
+  color: #a63737;
+}
+
 .MainContainer {
   position: absolute;
   top: 60%;

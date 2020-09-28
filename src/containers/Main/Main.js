@@ -43,22 +43,27 @@ class Main extends Component {
           </div>
         )}
         {!loading && (
-          <div className={stylesHome.MainContainer}>
-            <div className={stylesHome.Upper}>
-              <span>P</span>
-              <span>O</span>
-              <span>R</span>
-              <span>T</span>
+          <>
+            <span className={stylesHome.Msg}>
+              이 사이트는 <strong>Chrome</strong>에 최적화되어 있습니다.
+            </span>
+            <div className={stylesHome.MainContainer}>
+              <div className={stylesHome.Upper}>
+                <span>P</span>
+                <span>O</span>
+                <span>R</span>
+                <span>T</span>
+              </div>
+              <div className={stylesHome.Down}>
+                <span>F</span>
+                <span>O</span>
+                <span>L</span>
+                <span className={stylesHome.I}>I</span>
+                <span className={stylesHome.O}>O</span>
+                <span className={stylesHome.Dot}></span>
+              </div>
             </div>
-            <div className={stylesHome.Down}>
-              <span>F</span>
-              <span>O</span>
-              <span>L</span>
-              <span className={stylesHome.I}>I</span>
-              <span className={stylesHome.O}>O</span>
-              <span className={stylesHome.Dot}></span>
-            </div>
-          </div>
+          </>
         )}
       </>
     );

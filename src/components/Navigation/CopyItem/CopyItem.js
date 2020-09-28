@@ -34,9 +34,6 @@ class CopyItem extends Component {
           onCopy={() => this.handleOpen()}
         >
           <a className={styles.CopyItem}>
-            <span className={styles.Msg}>
-              이 사이트는 <strong>Chrome</strong>에 최적화되어 있습니다.
-            </span>
             <span className={styles.Email}>{this.props.children}</span>
             <span className={styles.CopyBtn}>Copy</span>
             {this.state.copied && <h1 className={styles.CopiedMsg}>copied!</h1>}
