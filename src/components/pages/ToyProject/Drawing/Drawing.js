@@ -12,9 +12,11 @@ class Drawing extends Component {
       imgNum: 0,
       loading: true,
       width: '23%',
+      hoverStates: {},
     };
     this.imgLength = drawingList.length - 1;
   }
+
   increaseNumber = () => {
     this.setState((prevState) => ({
       imgNum: (prevState.imgNum + 1) % this.imgLength,
@@ -61,7 +63,7 @@ class Drawing extends Component {
   };
 
   render() {
-    const { imgNum, show, width } = this.state;
+    const { imgNum, show, width, hoverStates } = this.state;
 
     return (
       <>
@@ -76,45 +78,78 @@ class Drawing extends Component {
           <div className={styles.Row}>
             {this.renderLoader()}
             <div className={styles.Col}>
-              <img
-                id={0}
-                onClick={this.modalOpen}
-                src={drawingList[0].src}
-                alt={drawingList[0].alt}
-              />
-              <img
-                id={2}
-                onClick={this.modalOpen}
-                onLoad={this.handleImageLoaded}
-                src={drawingList[2].src}
-                alt={drawingList[2].alt}
-              />
-              <img
-                id={4}
-                onClick={this.modalOpen}
-                src={drawingList[4].src}
-                alt={drawingList[4].alt}
-              />
+              <div className={styles.EachImg}>
+                <img
+                  id={0}
+                  onClick={this.modalOpen}
+                  src={drawingList[0].src}
+                  alt={drawingList[0].alt}
+                />
+                <h2 id={0} onClick={this.modalOpen}>
+                  Dionysos
+                </h2>
+              </div>
+
+              <div className={styles.EachImg}>
+                <img
+                  id={2}
+                  onClick={this.modalOpen}
+                  onLoad={this.handleImageLoaded}
+                  src={drawingList[2].src}
+                  alt={drawingList[2].alt}
+                />
+
+                <h2 id={2} onClick={this.modalOpen}>
+                  Tinker-Bell
+                </h2>
+              </div>
+              <div className={styles.EachImg}>
+                <img
+                  id={4}
+                  onClick={this.modalOpen}
+                  src={drawingList[4].src}
+                  alt={drawingList[4].alt}
+                />
+
+                <h2 id={4} onClick={this.modalOpen}>
+                  Venus
+                </h2>
+              </div>
             </div>
             <div className={styles.Col}>
-              <img
-                id={1}
-                onClick={this.modalOpen}
-                src={drawingList[1].src}
-                alt={drawingList[1].alt}
-              />
-              <img
-                id={3}
-                onClick={this.modalOpen}
-                src={drawingList[6].src}
-                alt={drawingList[6].alt}
-              />
-              <img
-                id={5}
-                onClick={this.modalOpen}
-                src={drawingList[5].src}
-                alt={drawingList[5].alt}
-              />
+              <div className={styles.EachImg}>
+                <img
+                  id={1}
+                  onClick={this.modalOpen}
+                  src={drawingList[1].src}
+                  alt={drawingList[1].alt}
+                />
+                <h2 id={1} onClick={this.modalOpen}>
+                  Narcissus
+                </h2>
+              </div>
+              <div className={styles.EachImg}>
+                <img
+                  id={3}
+                  onClick={this.modalOpen}
+                  src={drawingList[6].src}
+                  alt={drawingList[6].alt}
+                />
+                <h2 id={3} onClick={this.modalOpen}>
+                  Romeo&Juliet
+                </h2>
+              </div>
+              <div className={styles.EachImg}>
+                <img
+                  id={5}
+                  onClick={this.modalOpen}
+                  src={drawingList[5].src}
+                  alt={drawingList[5].alt}
+                />
+                <h2 id={5} onClick={this.modalOpen}>
+                  Rapunzel
+                </h2>
+              </div>
             </div>
           </div>
           {show && (

@@ -41,8 +41,8 @@ class Resume extends Component {
           <div className={styles.Header}>
             <h1>Resume</h1>
           </div>
+          {this.renderLoader}
           <div className={styles.Resume}>
-            {this.renderLoader}
             <img onLoad={this.handleImageLoaded} src={resume} />
             <div className={styles.Download}>
               <h2>

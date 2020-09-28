@@ -33,8 +33,8 @@ class Contact extends Component {
               <img src={WorkMsg} alt="WorkMessage" />
             </div>
           </div>
+          {this.renderLoader}
           <div className={styles.Card}>
-            {this.renderLoader}
             <img
               src={Card}
               alt="contact-card"

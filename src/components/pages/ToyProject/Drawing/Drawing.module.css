@@ -42,18 +42,50 @@
 .Row {
   display: -ms-flexbox;
   display: flex;
-  /* -ms-flex-wrap: wrap;
-  flex-wrap: wrap; */
   padding: 0 4px;
 }
+
+.EachImg {
+  margin-top: 2.78vw;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+.EachImg h2 {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Poppins', serif;
+  font-size: 1.6vw;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transition: all 1s 0ms cubic-beizer(0.6, -0.28, 0.735, 0.045);
+}
+
+.EachImg:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.35;
+  filter: grayscale(100%);
+  transition: all 0.35s ease-in-out;
+}
+.EachImg:hover h2 {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.EachImg:hover img {
+  transform: scale(1.1);
+}
+
 .Col {
-  -ms-flex: 50%; /* IE10 */
+  -ms-flex: 50%;
   flex: 50%;
   max-width: 50%;
   padding: 0 20px;
 }
 .Col img {
-  margin-top: 2.78vw;
   vertical-align: middle;
   width: 100%;
 }

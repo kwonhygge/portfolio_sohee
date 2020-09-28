@@ -67,8 +67,8 @@
 .HomeLogo {
   width: 4.8vw;
   height: 4.8vw;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 80px;
+  max-height: 80px;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
@@ -92,9 +92,9 @@
   }
 }
 
-/* @media (min-width: 1441px) and (max-width: 1920px) {
+@media (min-width: 1367px) and (max-width: 1920px) {
   .HomeLogo {
     max-width: 100px;
     max-height: 100px;
   }
-} */
+}
