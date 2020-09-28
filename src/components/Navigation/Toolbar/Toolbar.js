@@ -66,6 +66,7 @@ class Toolbar extends Component {
               <Link to="/home" className={styles.HomeLogo}>
                 <HomeLogo />
               </Link>
+
               <div
                 className={styles.MenuIcon}
                 onhomeClick={this.handleHomeClick}

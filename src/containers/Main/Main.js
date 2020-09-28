@@ -37,7 +37,9 @@ class Main extends Component {
           <div className={styles.LoadingContainer}>
             <div className={styles.ProgressBar}></div>
             <h1>Loading</h1>
-            <h2>Please Wait...</h2>
+            <h2>
+              이 사이트는 <strong>Chrome</strong>에 최적화되어있습니다.
+            </h2>
           </div>
         )}
         {!loading && (
