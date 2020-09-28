@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1f656c2d77997430b166c30ac230f4f",
+    "revision": "e18d1fe0ea7f0fdb264e4b2eeaeaf3d0",
     "url": "/portfolio_sohee/index.html"
   },
   {
-    "revision": "673e9986a767cd83a12f",
-    "url": "/portfolio_sohee/static/css/main.ef646141.chunk.css"
+    "revision": "8d39817df7cb41e0512d",
+    "url": "/portfolio_sohee/static/css/main.6ab2b4a0.chunk.css"
   },
   {
-    "revision": "c94a092b4d3a5b228b3e",
-    "url": "/portfolio_sohee/static/js/2.9a3a13c7.chunk.js"
+    "revision": "618921bdec95deb975e3",
+    "url": "/portfolio_sohee/static/js/2.8fee78f1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio_sohee/static/js/2.9a3a13c7.chunk.js.LICENSE.txt"
+    "url": "/portfolio_sohee/static/js/2.8fee78f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "673e9986a767cd83a12f",
-    "url": "/portfolio_sohee/static/js/main.379ea8dc.chunk.js"
+    "revision": "8d39817df7cb41e0512d",
+    "url": "/portfolio_sohee/static/js/main.43cd7abf.chunk.js"
   },
   {
     "revision": "6ae957c1dbfe63a905cf",
@@ -56,16 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio_sohee/static/media/2.3c713ae0.jpg"
   },
   {
-    "revision": "6aa0f90626efa65b6a912ca4194b5bc0",
-    "url": "/portfolio_sohee/static/media/2.6aa0f906.jpg"
-  },
-  {
     "revision": "6c2dcd5d00483110a759e9fc788e6237",
     "url": "/portfolio_sohee/static/media/2.6c2dcd5d.jpg"
   },
   {
     "revision": "7c7156bbc1fef808517de916b6e3b4c3",
     "url": "/portfolio_sohee/static/media/2.7c7156bb.jpg"
+  },
+  {
+    "revision": "83cc51118ea3f9ebfac0cc5b25a21b65",
+    "url": "/portfolio_sohee/static/media/2.83cc5111.jpg"
   },
   {
     "revision": "9ae373665b954378a043578880b4d5e1",
@@ -122,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fdb21688860a6d43b5c42b020373a769",
     "url": "/portfolio_sohee/static/media/7.fdb21688.png"
+  },
+  {
+    "revision": "6942ecb9fd16fd75cd4ee3011fcc8c20",
+    "url": "/portfolio_sohee/static/media/8.6942ecb9.jpg"
   },
   {
     "revision": "3d824e7d83f1977214ede1f1dc3f9465",
