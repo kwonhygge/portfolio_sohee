@@ -21,6 +21,7 @@
   margin: auto;
   display: block;
   width: 100%;
+  overflow-y: auto;
 }
 .More {
   font-family: 'Noto Sans KR', sans-serif;
