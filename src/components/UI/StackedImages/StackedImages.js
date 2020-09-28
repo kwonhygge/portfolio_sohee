@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from './StackedImages.module.css';
 import AngleRight from '../../../assets/icons/AngleRight';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LoadElement from '../../UI/LoadElement/LoadElement';
 import ImageModalAll from '../ImageModalAll/ImageModalAll';
 
@@ -24,9 +25,6 @@ class StackedImages extends Component {
     this.setState({ loading: false });
   };
 
-  handleImageErrored() {
-    this.setState({ loading: true });
-  }
   handleOpen = () => {
     this.setState({ show: true });
     if (window.innerWidth < 1366) {
@@ -69,6 +67,10 @@ class StackedImages extends Component {
           )}
           <div className={styles.Content} onClick={this.handleOpen}>
             <div className={styles.Images}>
+              <div className={styles.More}>
+                <span>크게보기&nbsp;&nbsp;</span>
+                <FontAwesomeIcon icon="caret-down" size="1x" />
+              </div>
               {this.renderLoader()}
               {imgList.map((item, index) => {
                 let zIndex = this.imgLength - index;
@@ -103,6 +105,7 @@ class StackedImages extends Component {
 
           <div className={styles.Next} onClick={nextClick}>
             <span>See Next</span>
+
             <AngleRight />
           </div>
         </div>

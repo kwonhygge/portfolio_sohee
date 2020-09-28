@@ -12,7 +12,6 @@ class Drawing extends Component {
       imgNum: 0,
       loading: true,
       width: '23%',
-      hoverStates: {},
     };
     this.imgLength = drawingList.length - 1;
   }

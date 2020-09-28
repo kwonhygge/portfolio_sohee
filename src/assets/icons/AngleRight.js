@@ -1,7 +1,7 @@
 import React from 'react';
 const AngleRight = () => (
   <>
-    <svg width="35" viewBox="0 0 54 77" fill="none">
+    <svg width="2vw" viewBox="0 0 54 77" fill="none">
       <g filter="url(#filter0_ddi)">
         <path
           fillRule="evenodd"

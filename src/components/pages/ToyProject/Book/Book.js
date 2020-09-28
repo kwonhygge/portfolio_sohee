@@ -8,7 +8,7 @@ import styles from './Book.module.css';
 import harryList from '../../../../assets/images/harryPotter';
 import LoadElement from '../../../UI/LoadElement/LoadElement';
 import Modal from '../../../UI/Modal/Modal';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class Book extends Component {
   constructor() {
     super();
@@ -43,7 +43,8 @@ class Book extends Component {
           {this.renderLoader()}
           <div className={styles.Img}>
             <div className={styles.More}>
-              <span>펼쳐보기</span>
+              <span>펼쳐보기&nbsp;&nbsp;</span>
+              <FontAwesomeIcon icon="caret-down" size="1x" />
             </div>
             <img
               onClick={this.handleClick}

@@ -7,6 +7,7 @@
 }
 
 .Images {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   justify-content: center;
@@ -34,6 +35,15 @@
 .Image img {
   width: 100%;
 }
+.More {
+  position: absolute;
+  top: -17px;
+  right: 30px;
+  font-size: 0.67vw;
+  font-weight: 600;
+  color: #828282;
+  font-family: 'Noto Sans KR', sans-serif;
+}
 
 .PosterName {
   margin-left: 1.5vw;
@@ -47,6 +57,7 @@
 }
 
 .Next {
+  width: 6.5vw;
   display: flex;
   display: -ms-flexbox;
   align-items: center;
@@ -57,4 +68,7 @@
 }
 .Next span {
   margin-right: 0.5vw;
+}
+.Next:hover span {
+  font-weight: 700;
 }
