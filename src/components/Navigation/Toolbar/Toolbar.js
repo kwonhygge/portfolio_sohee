@@ -63,7 +63,7 @@ class Toolbar extends Component {
         <header className={styles.Toolbar}>
           <div className={styles.ToolbarContent}>
             <div>
-              <Link to="/" exact="true" className={styles.HomeLogo}>
+              <Link to="/home" className={styles.HomeLogo}>
                 <HomeLogo />
               </Link>
               <div
