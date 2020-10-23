@@ -40,7 +40,7 @@ class Book extends Component {
     return (
       <>
         <Element name="book1">
-          <ToyInfo item={ToyItems[0][0]} />
+          <ToyInfo item={ToyItems[1][0]} />
           {this.renderLoader()}
           <div className={styles.Img}>
             <div className={styles.More}>
@@ -68,12 +68,12 @@ class Book extends Component {
           </div>
         </Element>
         <Element name="book2">
-          <ToyInfo item={ToyItems[0][1]} />
+          <ToyInfo item={ToyItems[1][1]} />
 
           <div className={styles.Img}>
             <ImageModalEach
-              itemIndx={ToyItems[0][1].index}
-              itemName={ToyItems[0][1].name}
+              itemIndx={ToyItems[1][1].index}
+              itemName={ToyItems[1][1].name}
               smallSrc={coverEachList[0].smallSrc}
               bigSrc={coverEachList[0].bigSrc}
               imgAlt={coverEachList[1].alt}
@@ -81,11 +81,11 @@ class Book extends Component {
           </div>
         </Element>
         <Element name="book3">
-          <ToyInfo item={ToyItems[0][2]} isStory={true} />
+          <ToyInfo item={ToyItems[1][2]} isStory={true} />
           <div className={styles.Img}>
             <ImageModalEach
-              itemIndx={ToyItems[0][2].index}
-              itemName={ToyItems[0][2].name}
+              itemIndx={ToyItems[1][2].index}
+              itemName={ToyItems[1][2].name}
               smallSrc={coverEachList[1].smallSrc}
               bigSrc={coverEachList[1].bigSrc}
               imgAlt={coverEachList[1].alt}

@@ -1,6 +1,19 @@
 export const ToyItems = [
   [
     {
+      index: 'Web 1',
+      name: '만다라트 플래너',
+      colors: ['#323232', '#FFFFFF', '#D7CBB5'],
+      member: '(2인) 팀',
+      role: "기획 및 전체 디자인",
+      period: '2020년 9월',
+      objective: '',
+      boldObj: '플래너 사이트 제작',
+      program: 'Figma',
+    }
+  ],
+  [
+    {
       index: 'Book 1',
       name: '해리포터 스튜디오 가이드북',
       colors: ['#AC8035', '#F7F8F8', '#334642'],

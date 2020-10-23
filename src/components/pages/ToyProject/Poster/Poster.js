@@ -39,33 +39,33 @@ class Poster extends Component {
     return (
       <>
         <Element name="poster1">
-          <ToyInfo item={ToyItems[1][0]} colorNum={imgNum} length={2} />
+          <ToyInfo item={ToyItems[2][0]} colorNum={imgNum} length={2} />
           <StackedImages
             imgList={amelieList}
             nextClick={this.increaseNumber}
             marginLeft={22}
             imgNum={imgNum}
-            itemIndx={ToyItems[1][0].index}
-            itemName={ToyItems[1][0].name}
+            itemIndx={ToyItems[2][0].index}
+            itemName={ToyItems[2][0].name}
           />
         </Element>
         <Element name="poster2">
-          <ToyInfo item={ToyItems[1][1]} colorNum={imgNum} length={3} />
+          <ToyInfo item={ToyItems[2][1]} colorNum={imgNum} length={3} />
           <StackedImages
             imgList={beastList}
             nextClick={this.increaseNumber}
             marginLeft={19}
             imgNum={imgNum}
-            itemIndx={ToyItems[1][1].index}
-            itemName={ToyItems[1][1].name}
+            itemIndx={ToyItems[2][1].index}
+            itemName={ToyItems[2][1].name}
           />
         </Element>
         <Element name="poster3">
-          <ToyInfo item={ToyItems[1][2]} />
+          <ToyInfo item={ToyItems[2][2]} />
           <div className={styles.Img}>
             <ImageModalEach
-              itemIndx={ToyItems[1][2].index}
-              itemName={ToyItems[1][2].name}
+              itemIndx={ToyItems[2][2].index}
+              itemName={ToyItems[2][2].name}
               smallImgWidth={50}
               smallSrc={Festival.smallSrc}
               bigSrc={Festival.bigSrc}
