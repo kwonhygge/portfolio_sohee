@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import sideStyles from '../../../containers/SideStyle.module.css';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import styles from './Resume.module.css';
-import resume from '../../../assets/images/resume.jpg';
+import resume from '../../../assets/images/resume.png';
 import resumeFile from '../../../assets/resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LazyItem from '../../LazyItems/LazyItem/LazyItem';
