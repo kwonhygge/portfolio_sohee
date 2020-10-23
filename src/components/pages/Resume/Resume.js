@@ -5,24 +5,13 @@ import styles from './Resume.module.css';
 import resume from '../../../assets/images/resume.jpg';
 import resumeFile from '../../../assets/resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import LoadElement from '../../UI/LoadElement/LoadElement';
+import LazyItem from '../../LazyItems/LazyItem/LazyItem';
 
 class Resume extends Component {
   constructor() {
     super();
-    this.state = {
-      loading: true,
-    };
   }
-  renderLoader() {
-    if (!this.state.loading) {
-      return null;
-    }
-    return <LoadElement />;
-  }
-  handleImageLoaded = () => {
-    this.setState({ loading: false });
-  };
+
   render() {
     return (
       <>
@@ -41,9 +30,8 @@ class Resume extends Component {
           <div className={styles.Header}>
             <h1>Resume</h1>
           </div>
-          {this.renderLoader}
           <div className={styles.Resume}>
-            <img onLoad={this.handleImageLoaded} src={resume} />
+            <LazyItem src={resume} alt="resume" />
             <div className={styles.Download}>
               <h2>
                 Download<br></br>Resume

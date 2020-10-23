@@ -1,11 +1,12 @@
 import React, { lazy, Suspense } from 'react';
+import LoadElement from "../../UI/LoadElement/ImageLoadElement"
 const LazyImage = lazy(() => import("./LazyImage"));
 
 const LazyItem = (props) => {
 
     return (<>
-        <Suspense fallback={<img onClick={props.handleClick} src={props.lazyImg.src} alt={props.lazyImg.alt} />}>
-            <LazyImage handleClick={props.handleClick} src={props.realImg.src} alt={props.realImg.alt} />
+        <Suspense fallback={<LoadElement />}>
+            <LazyImage src={props.src} alt={props.alt} />
         </Suspense>
     </>)
 

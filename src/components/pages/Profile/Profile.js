@@ -4,6 +4,7 @@ import styles from './Profile.module.css';
 import sideStyles from '../../../containers/SideStyle.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import profileImg from '../../../assets/images/profile.png';
+import LazyItem from "../../LazyItems/LazyItem/LazyItem";
 const Profile = () => (
   <>
     <SideDrawer>
@@ -19,7 +20,7 @@ const Profile = () => (
     </SideDrawer>
     <div className={styles.Contents}>
       <div className={styles.ImgContainer}>
-        <img src={profileImg} />
+        <LazyItem src={profileImg} alt="profileImg" />
       </div>
       <div className={styles.Profile}>
         <div className={styles.Header}>

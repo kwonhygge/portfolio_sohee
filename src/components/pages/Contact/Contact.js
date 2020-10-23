@@ -2,26 +2,13 @@ import React, { Component } from 'react';
 import styles from './Contact.module.css';
 import Card from '../../../assets/images/contact/Group 22.png';
 import WorkMsg from '../../../assets/images/contact/workwithme.png';
-import LoadElement from '../../UI/LoadElement/LoadElement';
+import LazyItem from "../../LazyItems/LazyItem/LazyItem"
 
 class Contact extends Component {
   constructor() {
     super();
-    this.state = {
-      loading: true,
-    };
   }
-  renderLoader = () => {
-    if (!this.state.loading) {
-      return null;
-    }
-    return <LoadElement />;
-  };
-  handleImageLoaded = () => {
-    this.setState({
-      loading: false,
-    });
-  };
+
 
   render() {
     return (
@@ -35,11 +22,7 @@ class Contact extends Component {
           </div>
           {this.renderLoader}
           <div className={styles.Card}>
-            <img
-              src={Card}
-              alt="contact-card"
-              onLoad={this.handleImageLoaded}
-            />
+            <LazyItem src={Card} alt="contact-card" />
           </div>
         </div>
       </>
