@@ -91,7 +91,7 @@ class StackedImages extends Component {
                   >
                     <img
                       onLoad={this.handleImageLoaded}
-                      src={imgList[indxNum].src}
+                      src={imgList[indxNum].smallSrc}
                     />
                   </div>
                 );

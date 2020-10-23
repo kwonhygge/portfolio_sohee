@@ -67,7 +67,8 @@ class Poster extends Component {
               itemIndx={ToyItems[1][2].index}
               itemName={ToyItems[1][2].name}
               smallImgWidth={50}
-              imgSrc={Festival.src}
+              smallSrc={Festival.smallSrc}
+              bigSrc={Festival.bigSrc}
               imgAlt={Festival.alt}
               maxWidth={this.state.maxSize}
             />

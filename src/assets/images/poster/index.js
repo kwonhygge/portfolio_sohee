@@ -1,3 +1,3 @@
 import Festival from './festival.jpg';
-
-export default { src: Festival, alt: 'festival' };
+import smallFestival from "./smallFestival.png";
+export default { bigSrc: Festival, alt: 'festival', smallSrc: smallFestival };
