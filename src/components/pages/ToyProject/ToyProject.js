@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Book from './Book/Book';
 import Poster from './Poster/Poster';
 import Drawing from './Drawing/Drawing';
+import WebPages from "./WebPages/WebPages"
 import sideStyles from '../../../containers/SideStyle.module.css';
 class ToyProject extends Component {
   constructor(props) {
@@ -29,7 +30,6 @@ class ToyProject extends Component {
 
   render() {
     const { type } = this.state;
-    const { posts } = this.props;
     return (
       <>
         <SideDrawer>
@@ -49,9 +49,33 @@ class ToyProject extends Component {
               onClick={this.handleClickType}
               className={type[0] && sideStyles.SelectedType}
             >
-              Book
+              Web
             </span>
             {type[0] && (
+              <div>
+                <Link
+                  to="web1"
+                  type="web"
+                  spy={true}
+                  smooth={true}
+                  offset={-500}
+                  duration={500}
+                >
+                  1
+                </Link>
+
+              </div>
+            )}
+          </div>
+          <div className={sideStyles.SideIndex}>
+            <span
+              id="1"
+              onClick={this.handleClickType}
+              className={type[1] && sideStyles.SelectedType}
+            >
+              Book
+            </span>
+            {type[1] && (
               <div>
                 <Link
                   to="book1"
@@ -86,13 +110,13 @@ class ToyProject extends Component {
           </div>
           <div className={sideStyles.SideIndex}>
             <span
-              id="1"
+              id="2"
               onClick={this.handleClickType}
-              className={type[1] && sideStyles.SelectedType}
+              className={type[2] && sideStyles.SelectedType}
             >
               Poster
             </span>
-            {type[1] && (
+            {type[2] && (
               <div>
                 <Link
                   to="poster1"
@@ -126,18 +150,19 @@ class ToyProject extends Component {
           </div>
           <div className={sideStyles.SideIndex}>
             <span
-              id="2"
+              id="3"
               onClick={this.handleClickType}
-              className={type[2] && sideStyles.SelectedType}
+              className={type[3] && sideStyles.SelectedType}
             >
               Drawing
             </span>
           </div>
         </SideDrawer>
         <div className={styles.Contents}>
-          {type[0] && <Book />}
-          {type[1] && <Poster />}
-          {type[2] && <Drawing />}
+          {type[0] && <WebPages />}
+          {type[1] && <Book />}
+          {type[2] && <Poster />}
+          {type[3] && <Drawing />}
         </div>
       </>
     );
