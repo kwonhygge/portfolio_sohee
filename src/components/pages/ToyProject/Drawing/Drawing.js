@@ -4,6 +4,7 @@ import drawingList from '../../../../assets/images/drawing';
 import Modal from '../../../UI/Modal/Modal';
 import LoadElement from '../../../UI/LoadElement/LoadElement';
 
+
 class Drawing extends Component {
   constructor() {
     super();
@@ -75,13 +76,13 @@ class Drawing extends Component {
         </div>
         <div className={styles.Gallery}>
           <div className={styles.Row}>
-            {this.renderLoader()}
+            {/* {this.renderLoader()} */}
             <div className={styles.Col}>
               <div className={styles.EachImg}>
                 <img
                   id={0}
                   onClick={this.modalOpen}
-                  src={drawingList[0].src}
+                  src={drawingList[0].smallSrc}
                   alt={drawingList[0].alt}
                 />
                 <h2 id={0} onClick={this.modalOpen}>
@@ -94,7 +95,7 @@ class Drawing extends Component {
                   id={2}
                   onClick={this.modalOpen}
                   onLoad={this.handleImageLoaded}
-                  src={drawingList[2].src}
+                  src={drawingList[2].smallSrc}
                   alt={drawingList[2].alt}
                 />
 
@@ -106,7 +107,7 @@ class Drawing extends Component {
                 <img
                   id={4}
                   onClick={this.modalOpen}
-                  src={drawingList[4].src}
+                  src={drawingList[4].smallSrc}
                   alt={drawingList[4].alt}
                 />
 
@@ -120,7 +121,7 @@ class Drawing extends Component {
                 <img
                   id={1}
                   onClick={this.modalOpen}
-                  src={drawingList[7].src}
+                  src={drawingList[7].smallSrc}
                   alt={drawingList[7].alt}
                 />
                 <h2 id={1} onClick={this.modalOpen}>
@@ -131,7 +132,7 @@ class Drawing extends Component {
                 <img
                   id={3}
                   onClick={this.modalOpen}
-                  src={drawingList[6].src}
+                  src={drawingList[6].smallSrc}
                   alt={drawingList[6].alt}
                 />
                 <h2 id={3} onClick={this.modalOpen}>
@@ -142,7 +143,7 @@ class Drawing extends Component {
                 <img
                   id={5}
                   onClick={this.modalOpen}
-                  src={drawingList[5].src}
+                  src={drawingList[5].smallSrc}
                   alt={drawingList[5].alt}
                 />
                 <h2 id={5} onClick={this.modalOpen}>

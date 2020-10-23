@@ -9,6 +9,7 @@ import harryList from '../../../../assets/images/harryPotter';
 import LoadElement from '../../../UI/LoadElement/LoadElement';
 import Modal from '../../../UI/Modal/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 class Book extends Component {
   constructor() {
     super();
@@ -46,6 +47,7 @@ class Book extends Component {
               <span>펼쳐보기&nbsp;&nbsp;</span>
               <FontAwesomeIcon icon="caret-down" size="1x" />
             </div>
+
             <img
               onClick={this.handleClick}
               onLoad={this.handleImageLoaded}
@@ -59,7 +61,7 @@ class Book extends Component {
                 harry={true}
               >
                 <div className={styles.ModalImgContainer}>
-                  <img className={styles.ImgInModal} src={harryList[1].src} />
+                  <img className={styles.ImgInModal} src={harryList[2].src} />
                 </div>
               </Modal>
             )}
@@ -72,7 +74,8 @@ class Book extends Component {
             <ImageModalEach
               itemIndx={ToyItems[0][1].index}
               itemName={ToyItems[0][1].name}
-              imgSrc={coverEachList[0].src}
+              smallSrc={coverEachList[0].smallSrc}
+              bigSrc={coverEachList[0].bigSrc}
               imgAlt={coverEachList[1].alt}
             />
           </div>
@@ -83,7 +86,8 @@ class Book extends Component {
             <ImageModalEach
               itemIndx={ToyItems[0][2].index}
               itemName={ToyItems[0][2].name}
-              imgSrc={coverEachList[1].src}
+              smallSrc={coverEachList[1].smallSrc}
+              bigSrc={coverEachList[1].bigSrc}
               imgAlt={coverEachList[1].alt}
             />
           </div>

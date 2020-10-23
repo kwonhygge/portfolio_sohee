@@ -5,6 +5,10 @@
   cursor: pointer;
   position: relative;
 }
+.Img img{
+  width: 100%;
+  height:100%;
+}
 .Img:hover img {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;

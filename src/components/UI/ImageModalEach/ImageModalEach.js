@@ -16,7 +16,8 @@ class ImageModalEach extends Component {
     const {
       itemIndx,
       itemName,
-      imgSrc,
+      smallSrc,
+      bigSrc,
       imgAlt,
       maxWidth,
       smallImgWidth,
@@ -33,7 +34,7 @@ class ImageModalEach extends Component {
             <span>크게 보기&nbsp;&nbsp;</span>
             <FontAwesomeIcon icon="caret-down" size="1x" />
           </div>
-          <img src={imgSrc} alt={imgAlt}></img>
+          <img src={smallSrc} alt={imgAlt}></img>
         </div>
 
         <Modal
@@ -45,7 +46,7 @@ class ImageModalEach extends Component {
           <img
             className={styles.ImgInModal}
             style={{ maxWidth: `${maxWidth}px` }}
-            src={imgSrc}
+            src={bigSrc}
             onClick={this.handleShowDialog}
           ></img>
         </Modal>
