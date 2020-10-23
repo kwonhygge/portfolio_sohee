@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio_sohee=this.webpackJsonpportfolio_sohee||[]).push([[3],{144:function(t,e,o){"use strict";o.r(e);var s=o(0),r=o.n(s);e.default=function(t){return r.a.createElement("img",{src:t.src,alt:t.alt})}}}]);
+//# sourceMappingURL=3.7c75cbe8.chunk.js.map

@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9fb9a6c0aa2eda65ba318e3d79c5bebf",
+    "revision": "f25094b5a0f880aefdcfc062d41013db",
     "url": "/portfolio_sohee/index.html"
   },
   {
-    "revision": "6b21d794906881d815ef",
+    "revision": "75c3269fe6ae00074bb8",
     "url": "/portfolio_sohee/static/css/main.5f853cc6.chunk.css"
   },
   {
-    "revision": "fe1c66591d593f78cdb1",
-    "url": "/portfolio_sohee/static/js/2.c782f8bc.chunk.js"
+    "revision": "e345fba10c0933bae9b8",
+    "url": "/portfolio_sohee/static/js/2.bb6eb214.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/portfolio_sohee/static/js/2.c782f8bc.chunk.js.LICENSE.txt"
+    "url": "/portfolio_sohee/static/js/2.bb6eb214.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "70b58bd02b2d3babd60b",
-    "url": "/portfolio_sohee/static/js/3.88f50492.chunk.js"
+    "revision": "881349b2d8367eb037bb",
+    "url": "/portfolio_sohee/static/js/3.7c75cbe8.chunk.js"
   },
   {
-    "revision": "6b21d794906881d815ef",
-    "url": "/portfolio_sohee/static/js/main.0b344d68.chunk.js"
+    "revision": "75c3269fe6ae00074bb8",
+    "url": "/portfolio_sohee/static/js/main.3d76bdc8.chunk.js"
   },
   {
-    "revision": "e6de5b7c66e9254ed9b3",
-    "url": "/portfolio_sohee/static/js/runtime-main.2930f4cd.js"
+    "revision": "b87fdf18fa15d123720a",
+    "url": "/portfolio_sohee/static/js/runtime-main.dcf5b5be.js"
   },
   {
     "revision": "021c10f6a7624feb74cc52c42cbf7225",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "209ce744902c17065a935a4612ba88d7",
     "url": "/portfolio_sohee/static/media/1.209ce744.jpg"
+  },
+  {
+    "revision": "8532e9e62b9069885797fa52a8dc77b1",
+    "url": "/portfolio_sohee/static/media/1.8532e9e6.png"
   },
   {
     "revision": "8ffb14724b179e27d2f23a0c1621a992",
@@ -144,8 +148,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio_sohee/static/media/lazy1.49a67d4f.png"
   },
   {
-    "revision": "d3c845e35f6a64218cdbde698970dd40",
-    "url": "/portfolio_sohee/static/media/profile.d3c845e3.png"
+    "revision": "0fc8b72880cfd5e9941a54dd5b2ac56f",
+    "url": "/portfolio_sohee/static/media/profile.0fc8b728.png"
   },
   {
     "revision": "17f6b040ca61147295307d838104ebf7",
