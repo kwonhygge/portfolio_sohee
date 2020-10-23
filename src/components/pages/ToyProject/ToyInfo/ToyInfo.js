@@ -30,8 +30,8 @@ const ToyInfo = (props) => {
                   {showStory ? (
                     <span>스토리 닫기</span>
                   ) : (
-                    <span>스토리 보기</span>
-                  )}
+                      <span>스토리 보기</span>
+                    )}
                 </label>
                 {showStory && (
                   <div className={bookStyles.Story}>
@@ -51,6 +51,10 @@ const ToyInfo = (props) => {
               <h1>인원</h1>
               <span>{item.member} 프로젝트</span>
             </div>
+            {item.role && <div>
+              <h1>역할</h1>
+              <span>{item.role}</span>
+            </div>}
             <div>
               <h1>기간</h1>
               <span>{item.period}</span>
