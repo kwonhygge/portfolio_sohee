@@ -9,6 +9,18 @@ export const ToyItems = [
       objective: '해리포터 스튜디오를 안내하는 ',
       boldObj: '투어 가이드북 제작',
       program: 'Photoshop, indesign',
+    }
+  ],
+  [
+    {
+      index: 'Book 1',
+      name: '해리포터 스튜디오 가이드북',
+      colors: ['#AC8035', '#F7F8F8', '#334642'],
+      member: '개인',
+      period: '2016년 8월',
+      objective: '해리포터 스튜디오를 안내하는 ',
+      boldObj: '투어 가이드북 제작',
+      program: 'Photoshop, indesign',
     },
     {
       index: 'Book 2',
