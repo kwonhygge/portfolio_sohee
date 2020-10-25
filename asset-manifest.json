@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio_sohee/static/css/main.c8037504.chunk.css",
-    "main.js": "/portfolio_sohee/static/js/main.c91f0998.chunk.js",
-    "main.js.map": "/portfolio_sohee/static/js/main.c91f0998.chunk.js.map",
+    "main.js": "/portfolio_sohee/static/js/main.421d5edb.chunk.js",
+    "main.js.map": "/portfolio_sohee/static/js/main.421d5edb.chunk.js.map",
     "runtime-main.js": "/portfolio_sohee/static/js/runtime-main.8f88b6d4.js",
     "runtime-main.js.map": "/portfolio_sohee/static/js/runtime-main.8f88b6d4.js.map",
     "static/js/2.d1ffd40f.chunk.js": "/portfolio_sohee/static/js/2.d1ffd40f.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.bcf00708.chunk.js": "/portfolio_sohee/static/js/3.bcf00708.chunk.js",
     "static/js/3.bcf00708.chunk.js.map": "/portfolio_sohee/static/js/3.bcf00708.chunk.js.map",
     "index.html": "/portfolio_sohee/index.html",
-    "precache-manifest.ad185d5bbdfa38f4dfa78c672637a4ce.js": "/portfolio_sohee/precache-manifest.ad185d5bbdfa38f4dfa78c672637a4ce.js",
+    "precache-manifest.0d8f071d122119d608deefa9888ed5d3.js": "/portfolio_sohee/precache-manifest.0d8f071d122119d608deefa9888ed5d3.js",
     "service-worker.js": "/portfolio_sohee/service-worker.js",
     "static/css/main.c8037504.chunk.css.map": "/portfolio_sohee/static/css/main.c8037504.chunk.css.map",
     "static/js/2.d1ffd40f.chunk.js.LICENSE.txt": "/portfolio_sohee/static/js/2.d1ffd40f.chunk.js.LICENSE.txt",
@@ -28,12 +28,12 @@
     "static/media/6.png": "/portfolio_sohee/static/media/6.84d174e0.png",
     "static/media/7.png": "/portfolio_sohee/static/media/7.fdb21688.png",
     "static/media/8.jpg": "/portfolio_sohee/static/media/8.6942ecb9.jpg",
-    "static/media/Group 22.png": "/portfolio_sohee/static/media/Group 22.3d824e7d.png",
+    "static/media/contact.png": "/portfolio_sohee/static/media/contact.a5dd14e7.png",
     "static/media/festival.jpg": "/portfolio_sohee/static/media/festival.28e772ba.jpg",
     "static/media/lazy1.png": "/portfolio_sohee/static/media/lazy1.49a67d4f.png",
     "static/media/profile.png": "/portfolio_sohee/static/media/profile.0fc8b728.png",
-    "static/media/resume.png": "/portfolio_sohee/static/media/resume.6bce0eba.png",
-    "static/media/resume.pdf": "/portfolio_sohee/static/media/resume.894cb3f1.pdf",
+    "static/media/resume.pdf": "/portfolio_sohee/static/media/resume.2743ef25.pdf",
+    "static/media/resume.png": "/portfolio_sohee/static/media/resume.ae2c664d.png",
     "static/media/small1.png": "/portfolio_sohee/static/media/small1.c55b9786.png",
     "static/media/small2.png": "/portfolio_sohee/static/media/small2.b15e56cc.png",
     "static/media/small3.png": "/portfolio_sohee/static/media/small3.61f81b64.png",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.8f88b6d4.js",
     "static/js/2.d1ffd40f.chunk.js",
     "static/css/main.c8037504.chunk.css",
-    "static/js/main.c91f0998.chunk.js"
+    "static/js/main.421d5edb.chunk.js"
   ]
 }
