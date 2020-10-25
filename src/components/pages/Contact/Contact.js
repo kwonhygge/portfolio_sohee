@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Contact.module.css';
-import Card from '../../../assets/images/contact/Group 22.png';
+import Card from '../../../assets/images/contact/contact.png';
 import WorkMsg from '../../../assets/images/contact/workwithme.png';
 import LazyItem from "../../LazyItems/LazyItem/LazyItem"
 

@@ -74,8 +74,8 @@ class Toolbar extends Component {
                 {homeClick ? (
                   <FontAwesomeIcon icon="times" size="2x" />
                 ) : (
-                  <FontAwesomeIcon icon="bars" size="2x" />
-                )}
+                    <FontAwesomeIcon icon="bars" size="2x" />
+                  )}
               </div>
               <ul className={styles.NavItems}>
                 <li
@@ -99,12 +99,12 @@ class Toolbar extends Component {
                         size="1x"
                       />
                     ) : (
-                      <FontAwesomeIcon
-                        className={styles.Caret}
-                        icon="caret-down"
-                        size="1x"
-                      />
-                    )}
+                        <FontAwesomeIcon
+                          className={styles.Caret}
+                          icon="caret-down"
+                          size="1x"
+                        />
+                      )}
                   </Link>
                   {hoverStates[0] ? (
                     <Dropdown className={styles.Dropdown} menu={0} />
@@ -131,12 +131,12 @@ class Toolbar extends Component {
                         size="1x"
                       />
                     ) : (
-                      <FontAwesomeIcon
-                        className={styles.Caret}
-                        icon="caret-down"
-                        size="1x"
-                      />
-                    )}
+                        <FontAwesomeIcon
+                          className={styles.Caret}
+                          icon="caret-down"
+                          size="1x"
+                        />
+                      )}
                   </Link>
                   {hoverStates[1] ? (
                     <Dropdown className={styles.Dropdown} menu={1} />
@@ -150,7 +150,7 @@ class Toolbar extends Component {
                 </li>
               </ul>
             </div>
-            <CopyItem>Chubycheeks01@gmail.com</CopyItem>
+            <CopyItem>shineey.sh@gmail.com</CopyItem>
           </div>
         </header>
       </>

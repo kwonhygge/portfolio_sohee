@@ -30,7 +30,7 @@ class CopyItem extends Component {
     return (
       <>
         <CopyToClipboard
-          text="Chubycheeks01@gmail.com"
+          text="shineey.sh@gmail.com"
           onCopy={() => this.handleOpen()}
         >
           <a className={styles.CopyItem}>
