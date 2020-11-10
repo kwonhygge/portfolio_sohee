@@ -14,7 +14,7 @@ export const WorksItems = [
       role: '싸인물 기획 및 디자인',
       explanation: '*로고, 아이콘 제외',
     },
-    program: 'illustration',
+    program: 'illustrator',
   },
   {
     index: 'work 2',
@@ -31,6 +31,6 @@ export const WorksItems = [
       role: '싸인물 기획 및 디자인',
       explanation: '*큐레이션 글 제외',
     },
-    program: 'illustration',
+    program: 'illustrator',
   },
 ];
