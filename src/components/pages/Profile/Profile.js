@@ -3,7 +3,7 @@ import SideDrawer from '../../Navigation/SideDrawer/SideDrawer';
 import styles from './Profile.module.css';
 import sideStyles from '../../../containers/SideStyle.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import profileImg from '../../../assets/images/profile.png';
+import profileImg from '../../../assets/images/profile.jpg';
 import LazyItem from "../../LazyItems/LazyItem/LazyItem";
 const Profile = () => (
   <>
@@ -47,20 +47,16 @@ const Profile = () => (
           <div className={styles.MsgHeader}>
             <span className={styles.QuoteLeft}>“</span>
             <h1>
-              <span>안녕하세요.</span> 박소희입니다.
+              <span>안녕하세요.</span> 박소희입니다.”
             </h1>
-            <h1>콘텐츠와 나의 삶의 주체가 되고 싶습니다.</h1>
-            <span className={styles.QuoteRight}>”</span>
           </div>
 
           <div className={styles.MsgFooter}>
-            <h2>도서관 사서, 디자이너, 독립출판 에디터까지.</h2>
-            <h2>여러 분야에 부딪치며 성장해왔습니다.</h2>
+            <h2>생각의 퍼즐을 주워모아 말과 글, 그림으로 완성하는 일을 좋아합니다. 새로운 경험과 가치를 발견하는 일에 관심이 많습니다. </h2>
             <h2>
               <br></br>
             </h2>
-            <h2>이제는 나의 이야기를 담은 콘텐츠로</h2>
-            <h2>콘텐츠와 나의 삶의 주체가 되고 싶습니다.</h2>
+            <h2>현재는 일상에서 가치를 발견하는 연습을 하는 중입니다. 새로 생긴 카페나 식당에 방문하거나, 서점과 전시를 구경하고, 친구를 만나는 일을 좋아합니다. 새롭고 즐거운 제안을 기다리고 있습니다.</h2>
           </div>
         </div>
       </div>
